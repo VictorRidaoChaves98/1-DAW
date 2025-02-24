@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Shock</title>
+
+    <link rel="icon" href="favicon.gif" sizes="32x32"> <!--Dimensiones para pantallas de máxima resolución-->
+    <link rel="icon" href="favicon.gif" sizes="16x16"> <!--Dimensiones para navegadoers web comunes-->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            text-align: left;
+            color: #00df56;
+            margin-bottom: 0%;
+
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 10;
+            padding: 5;
+            justify-content: left;
+            color: #fff;
+
+
+        }
+
+        header nav ul li {
+            margin-right: 15px;
+            color: #fff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0dff00ac;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+            /* Esto es para suavizar los cambios de estado */
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: #00ff7b93;
+
+        }
+
+        body {
+            background-image: url(fondo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #00ff40;
+        }
+
+        table {
+            border-collapse: collapse; /* Elimina los espacios entre bordes */
+            width: 100%; /* Ajusta el ancho de la tabla */
+            margin: 20px 0; /* Agrega espacio superior e inferior */
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center; /* Alinea el texto a la izquierda */
+        }
+
+        th, td {
+            padding: 10px 15px; /* Espaciado interno de las celdas */
+            border: 1px solid #ddd; /* Bordes suaves para las celdas */
+        }
+
+        th {
+            background-color: #54ff39af; /* Color de fondo del encabezado */
+            color: white; /* Color del texto del encabezado */
+        }
+
+        tr {
+            background-color: #576fd800; /* Fondo alternado para filas pares */
+        }
+
+        tr:hover {
+            background-color: #2bff004d; /* Color de fondo al pasar el ratón */
+        }
+
+        footer {
+            color: rgb(12, 230, 59);
+            text-align: left;
+            padding: 10px;
+            bottom: 0;
+            width: 30%;
+            position: fixed;
+            font-size: large;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>SYSTEM SHOCK</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Sobretema.html">Sobre el tema</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Tareas.html">Lista de tareas</a></li>
+                <li><a href="Contactos.html">Contacto</a></li>
+                <li><a href="Video.html">Vídeo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Sobre el tema-->
+    <div style="display: flex;">
+        <section style="flex: 200%; background-color: rgba(164, 255, 190, 0.085);">
+            <article>
+                <h3 style="text-align: center;">ARGUMENTO</h3>
+            </article>
+            <hr>
+            <p> El 7 de abril del año 2072, un hacker irrumpió en la red de la Corporación TriOptimum e intentó acceder
+                a
+                sus archivos confidenciales. Las fuerzas de seguridad de TriOptimum lo localizaron y lo detuvieron
+                rápidamente.
+                Fue entonces cuando el vicepresidente de TriOptimum, Edward Diego , se puso en contacto con el hacker y
+                le
+                ofreció un trato: ayudaría a Diego a reprogramar a SHODAN, la I.A que controla la estación Ciudadela de
+                TriOptimum.
+                A cambio, no solo olvidaría el hecho de que intentó robar datos confidenciales, sino que también le
+                instalarían una interfaz neuronal de grado militar. El hacker, que de todos modos no tenía muchas
+                opciones,
+                aceptó. Lo
+                llevaron a la estación e hicieron modificaciones en la programación de SHODAN para eliminar sus
+                subrutinas
+                de seguridad.
+                Luego de esto, Diego hizo instalar la interfaz neuronal en el cerebro del hacker. El 6 de junio, la
+                operación se completó con éxito y el hacker entró en un coma curativo de 6 meses.
+            </p>
+
+            <p> El 6 de noviembre, el Hacker despiertó de su coma curativo y encuentra la Estación totalmente desierta,
+                a
+                excepción de
+                mutantes hostiles, cyborgs y robots de seguridad.
+                Luego es contactado por una tal Rebecca Lansing, una agente de seguridad de TriOptimum en la Tierra ,
+                quien
+                le informa que la estación se encuentra aislada y lo que es peor, que el láser minero de la Estación
+                está
+                apuntando hacia la Tierra. El Hacker actúa rápido y se mueve para ejecutar su plan: enciende los escudos
+                de la Estación, desactiva
+                la anulación y dispara el láser. El láser es destruido.
+            </p>
+
+            <p> Después de destruir el láser, el hacker se dirige al nivel ejecutivo para deshacerse de la Arboleda
+                Beta, donde SHODAN estaba
+                cultivando un virus mutágeno para liberarlo en la Tierra. Después de obtener un traje especial de
+                aislamiento, tiene que habilitar la
+                eliminación en todos las arboledas. Luego arroja la Arboleda Beta al espacio.
+            </p>
+
+            <p> Sin embargo, mientras la arboleda se aleja, Rebecca se pone en contacto con el hacker y le informa de
+                que se
+                ha detectado una sobrecarga en el enlace de datos entre la Ciudadela y la Tierra: SHODAN se está
+                descargando
+                a sí misma en la red informática de la Tierra. Para evitarlo, el hacker debe obtener explosivos de C4 de
+                alta energía y destruir las cuatro antenas de transmisión en el nivel de ingeniería de la estación. Tras
+                su
+                destrucción, Rebecca le dice al hacker que finalmente ha convencido a los ejecutivos de TriOptimum de
+                destruir toda la estación para detener a SHODAN. Para ello, el hacker debe destruir todos los nodos
+                informáticos en los primeros 6 niveles de la estación (porque SHODAN está utilizando la potencia de la
+                CPU
+                para cambiar rápidamente el código de autorización de los sistemas). Después de lograrlo, el hacker va
+                al
+                núcleo del reactor y lo sobrecarga. Luego se dirige a la cubierta de vuelo para abordar una cápsula de
+                escape y abandonar la estación antes de que explote. Sin embargo, SHODAN le impide llegar a la cápsula y
+                Rebecca sugiere una solución alternativa: atravesar los niveles de ingeniería y seguridad fuertemente
+                custodiados hasta el puente, que puede separarse de la Estación en caso de emergencia. El hacker llega
+                al
+                puente momentos antes de que la Estación sea destruida.
+            </p>
+
+            <p> En el puente, el Hacker encuentra el chip isolineal que puede desactivar a SHODAN.
+                También se enfrenta y derrota a Edward Diego, a quien SHODAN ha convertido en cyborg y puesto bajo su
+                control.
+                Cuando se instala el chip, el Hacker usa su interfaz neuronal para ingresar al Cyberespacio y luchar
+                contra SHODAN.
+                Después de una larga y agotadora lucha, el Hacker sale victorioso.
+            </p>
+        </section>
+
+        <section>
+        <table>
+            <caption> DISTRIBUCIÓN DE LA ESTACIÓN </caption>
+            <thead>
+                <tr>
+                    <th>Nivel</th>
+                    <th>Nombre</th>
+                    <th>Propósito</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>R</td>
+                    <td>Reactor</td>
+                    <td>Reactor principal</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hospital</td>
+                    <td>Cubierta médica</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Investigación</td>
+                    <td>Investigación científica, experimentación y robótica</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mantenimento</td>
+                    <td>Reparaciones y modificaciones</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Almacenamiento</td>
+                    <td>Suministros y robots de minería</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Cubierta de vuelo</td>
+                    <td>Hangares y oficinas</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Ejecutivo</td>
+                    <td>Áreas de estar, entretenimiento y hospedaje</td>
+                </tr>
+                <tr>
+                    <td>6.1</td>
+                    <td>Arboleda Alfa</td>
+                    <td>Ocio</td>
+                </tr>
+                <tr>
+                    <td>6.2</td>
+                    <td>Arboleda Beta</td>
+                    <td>Ocio</td>
+                </tr>
+                <tr>
+                    <td>6.3</td>
+                    <td>Arboleda Gamma</td>
+                    <td>Ocio</td>
+                </tr>
+                <tr>
+                    <td>6.4</td>
+                    <td>Arboleda Delta</td>
+                    <td>Ocio</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Ingeniería</td>
+                    <td>Tecnologías de comunicación</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Seguridad</td>
+                    <td>Fuerzas militares y prisión</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Puente</td>
+                    <td>Control de la Estación Ciudadela</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h3>Datos curiosos</h3>
+            <p>¿Sabías que se considera a System Shock como el padre de los Immersive Sim? Sin él juegos como
+                Dishonored, Prey y Bioshock no serían lo que son.</p>
+            <hr>
+            <p>¿Sabías que el código 0451 que se usa para abrir la primera puerta del juego tuvo su origen en este
+                juego? Y se ha usado como homenaje hasta el día de hoy.</p>
+            <hr>
+            <p>¿Sabías que en el juego Portal, para la creación de la siniestra I.A. Glados se inspiraron en Shodan?</p>
+            <hr>
+            <p>¿Sabías que actualmente hay en producción una serie de Netflix sobre System Shock?</p>
+
+        </aside>
+    </div>
+         <!-- Pie de página -->
+    <footer>
+        <div style="text-align: left;">
+        <p>Creado por <i>Víctor Manuel Ridao Chaves</i> &copy; 2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>

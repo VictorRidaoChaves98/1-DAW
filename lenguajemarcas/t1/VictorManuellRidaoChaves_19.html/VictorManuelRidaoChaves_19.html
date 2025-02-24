@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAVICON</title>
+
+    <p>Crea un archivo favicon.html en el que añadas un favicon propio, con sus características de apple, 32x32, 16x16
+        etc... que hemos visto en clase.
+        Este archivo debe contener un div con fondo rojo y transparencia 80%, título y texto en blanco, y una imagen
+        pequeña que flote a la derecha del texto.</p>
+
+    <!-- Aquí van las dimensiones del favicon arriba de la página -->
+
+    <link rel="icon" href="favicon.jpg" sizes="32x32">      <!--Dimensiones para pantallas de máxima resolución-->
+    <link rel="icon" href="favicon.jpg" sizes="16x16">      <!--Dimensiones para navegadoers web comunes-->
+    <link rel="icon" href="favicon.jpg" sizes="180x180">    <!--Dimensiones para dispositivos de Apple-->
+    <link rel="icon" href="favicon.jpg" sizes="192x192">    <!--Dimensiones para Android-->
+    <style>
+        body {
+            font-family: cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #682799;
+            padding: 80px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgb(255, 0, 0);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            text-align: left;
+            opacity: 80%;
+            text-align: center;
+        }
+
+        .container img { /* Aquí van las dimensiones del favicon */
+            float: right;
+            max-width: 70px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="favicon.jpg" alt="portada System-Shock">
+        <h1>Favicon</h1>
+        <p>Imagen elegida para el favicon.</p>
+    </div>
+</body>
+
+</html>

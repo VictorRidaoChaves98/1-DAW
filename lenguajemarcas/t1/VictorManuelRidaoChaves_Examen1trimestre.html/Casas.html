@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Harry Potter</title>
+    <style>
+        img {
+            display: block;
+            width: 40%;
+            margin: auto;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .texto {
+            flex: 1;
+            margin: 0 20px;
+
+        }
+
+        .image {
+            flex: 0 0 30%;
+
+        }
+
+        img {
+            width: 15%;
+            height: auto;
+        }
+
+        .image img {
+            content: url('hogwarts1.jpg');
+
+        }
+
+        @media (min-width:600px) {
+            .image img {
+                content: url('hogwarts1.jpg');
+            }
+
+        }
+
+        @media (min-width: 900px) {
+            .image img {
+                content: url('hogwarts1.jpg');
+            }
+
+        }
+
+        .section {
+            font-size: 400%;
+        }
+
+        .index {
+            color: #ffffff;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            background-size: cover;
+        }
+
+        table {
+            border-spacing: 20px;
+            margin: 20px auto;
+            width: 50%;
+            box-shadow: blueviolet;
+        }
+
+        td,
+        th {
+            padding: 10px;
+            text-align: center;
+            background-color: #eef0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        th {
+            background-color: rgb(179, 133, 186);
+            color: white;
+        }
+
+        td:nth-child(1) {
+            background-color: rgb(179, 133, 186);
+        }
+
+        td:nth-child(2) {
+            background-color: rgb(179, 133, 186);
+        }
+
+        td:nth-child(3) {
+            background-color: white;
+        }
+
+        td:nth-child(4) {
+            background-color: white;
+        }
+
+        td:nth-child(5) {
+            background-color: rgb(179, 133, 186);
+        }
+
+
+
+        table tr:hover td {
+            background-color: rgba(229, 31, 31, 0.729);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <nav style="text-align: center;">
+                Bienvenidos a Hogwarts
+            </nav>
+        </h1>
+        <img src="escudo.jpg" alt="" width="50px;" height="20px">
+    </header>
+
+    <h2 class="index">
+        <nav style="text-align: center; background-color: rgba(56, 69, 208, 0.653);">
+            <a style="color: white;" href="Index.html">Inicio</a> &nbsp;
+            <a style="color: white;" href="Casas.html">Casas</a> &nbsp;
+            <a style="color: white;" href="Profesores.html">Profesores</a> &nbsp;
+            <a style="color: white;" href="Lechuza.html">Lechuza</a> &nbsp;
+        </nav>
+    </h2>
+
+
+    <section style="background-color: red;">
+        <img src="gryffindor.jpg" alt="" width="10px;" height="10px">
+        <p>Puedes pertenecer a Gryffindor, donde habitan los valientes.
+            Su osadía, temple y caballerosidad ponen aparte a los de Gryffindor.
+        </p>
+    </section>
+    <section style="background-color: yellow;">
+        <img src="hufflepuff.jpg" alt="" width="10px;" height="10px">
+        <p>
+            Puedes pertenecer a Hufflepuff, donde son justos y leales.
+            Esos perseverantes Hufflepuff de verdad no temen el trabajo pesado
+        </p>
+    </section>
+    <section style="background-color: blue;">
+        <img src="ravenclaw.jpg" alt="" width="10px;" height="10px">
+        <p>
+            O tal vez a la antigua saviduría de Ravenclaw, si tienes una mente dispuesta.
+            Porque los de inteligencia y erudición siempre encontrarán allí a sus semejantes.
+        </p>
+    </section>
+    <section style="background-color: green;">
+        <img src="slytherin.jpg" alt="" width="10px;" height="10px">
+        <p>
+            O tal vez en Slytherin harás tus verdaderos amigos.
+            Esa gente astuta utiliza cualquier medio para lograr sus fines.
+        </p>
+    </section>
+    <h3 style="text-align: center;">Ranking</h3>
+    <p>Aquí puedes ver a nuestros alumnos más destacados, sus casas, sus clases favoritas y los puntos que han
+        conseguido
+        (o perdido), para sus casas.
+    </p>
+
+    <h2 style="color: rgb(0, 0, 0);">Tabla de alumnos de Hogwarts</h2>
+
+    <table>
+        <tr>
+            <th colspan="2"> ALUMNO</th>
+            <th colspan="3">CARACTERÍSTICAS</th>
+        </tr>
+        <tr>
+            <th>NOMBRE</th>
+            <th>APELLIDO</th>
+            <th>CASA</th>
+            <th>ASIGNATURA FAVORITA</th>
+            <th>PUNTOS</th>
+        </tr>
+        <tr>
+            <td>Harry</td>
+            <td>Potter</td>
+            <td>Gryffindor</td>
+            <td>Defensa contra las artes oscuras</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Ron</td>
+            <td>Weasley</td>
+            <td>Gryffindor</td>
+            <td>Transformación</td>
+            <td>-100</td>
+        </tr>
+        <tr>
+            <td>Hermione</td>
+            <td>Granger</td>
+            <td>Gryffindor</td>
+            <td>Todas menos Adivinación</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>Luna</td>
+            <td>Lovegood</td>
+            <td>Ravenclaw</td>
+            <td>Encantamientos</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Draco</td>
+            <td>Malfoy</td>
+            <td>Slytherin</td>
+            <td>Cuidado de criaturas mágicas</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Cedric</td>
+            <td>Diggory</td>
+            <td>Hufflepuff</td>
+            <td>Vuelo</td>
+            <td>200</td>
+        </tr>
+    </table>
+
+    <footer>
+        <div style="text-align: left; background-color: rgba(56, 69, 208, 0.653);">
+            <p>&copy; 2023 HOGWARTS, S.A.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

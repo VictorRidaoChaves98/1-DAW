@@ -1,0 +1,134 @@
+/* Estado normal de cada enlace */
+.presentacion {
+    color: red;
+    text-decoration: none;
+}
+
+.estudios {
+    color: red;
+    text-decoration: none;
+}
+
+.alumnos {
+    color: red;
+    text-decoration: none;
+}
+
+.deportes {
+    color: red;
+    text-decoration: none;
+}
+
+.servicios {
+    color: red;
+    text-decoration: none;
+}
+
+/* Cuando se pasa el ratón por encima */
+.presentacion:hover {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+
+.estudios:hover {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+
+.alumnos:hover {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+
+.deportes:hover {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+
+.servicios:hover {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+
+/* Cuando el enlace está activo */
+.presentacion:active {
+    color: orange;
+    text-decoration: none;
+}
+
+.estudios:active {
+    color: orange;
+    text-decoration: none;
+}
+
+.alumnos:active {
+    color: orange;
+    text-decoration: none;
+}
+
+.deportes:active {
+    color: orange;
+    text-decoration: none;
+}
+
+.servicios:active {
+    color: orange;
+    text-decoration: none;
+}
+
+/* Cuando el enlace ha sido visitado */
+.presentacion:visited {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.estudios:visited {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.alumnos:visited {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.deportes:visited {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.servicios:visited {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+/* Cuando el enlace tiene el foco del teclado */
+.presentacion:focus {
+    color: blue;
+    text-decoration: underline;
+}
+
+.estudios:focus {
+    color: blue;
+    text-decoration: underline;
+}
+
+.alumnos:focus {
+    color: blue;
+    text-decoration: underline;
+}
+
+.deportes:focus {
+    color: blue;
+    text-decoration: underline;
+}
+
+.servicios:focus {
+    color: blue;
+    text-decoration: underline;
+}

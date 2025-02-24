@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video y Audio</title>
+</head>
+
+<body>
+    <h1>Elementos Multimedia</h1>
+    <p>
+    <ol>Crea un archivo multimedia.html que contenga:
+        <li>Un video que empiece a reproducirse nada más cargar la página, que se repita en bucle y que esté muteado.
+        </li>
+        <li>Un vídeo que no empiece a reproducirse al cargar la página, que no cargue hasta que el usuario le de al play
+            y
+            que tenga una imagen de portada.</li>
+        <li>Un vídeo que no empiece a reproducirse desde el principio y que tampoco llegue al final (marca de tiempo de
+            inicio y fin).</li>
+        <li>Un audio que empiece a reproducirse al cargar la página.</li>
+        <br>
+        Todos los elementos tienen que tener los controles.
+    </ol>
+    </p>
+
+    <!-- Video que empieza a reproducirse al entrar a la página, se repite en bucle siempre y está muteado -->
+    <h2>Video con autoplay, en bucle y muteado</h2>
+    <video controls autoplay loop muted width="480">
+        <source src="videoplaneta.mp4" type="video/mp4">
+    </video>
+
+    <!-- Video que no carga hasta que el usuario le dé al play y que tiene una imagen de portada -->
+    <h2>Video con play manual y con portada</h2>
+    <video controls poster="vaultboy.jpg" preload="none" width="480">
+        <source src="videoastronauta.mp4" type="video/mp4">
+    </video>
+
+    <!-- Video que no empieza desde el principio y termina antes del final, hay que añadirle una mmarca de tiempo -->
+    <h2>Video con marca de tiempo, de inicio y final</h2>
+    <video controls width="480">
+        <source src="videoanime.mp4#t=2,4" type="video/mp4">
+    </video>
+
+    <!-- Audio que empieza a reproducirse al entrar en la página -->
+    <h2>Audio que se reproduce al cargar la página</h2>
+    <h4>Lunacid: Castle Le Fanu</h4>
+    <audio controls autoplay>
+        <source src="LunacidLeFanu.flac" type="audio/mpeg">
+    </audio>
+    <p>
+        Profesora, he intentado hacer que el audio cargue al entrar a la página pero por las leyes europeas lo han
+        prohibido; tiene que ser el usuario quien le dé manualmente. He probado con varios códigos y nada. Si sabe de
+        alguno con el que funcione se agradecería saberlo.
+    </p>
+</body>
+
+</html>

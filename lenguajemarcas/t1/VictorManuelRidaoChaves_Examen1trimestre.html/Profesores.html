@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Harry Potter</title>
+    <style>
+        img {
+            display: block;
+            width: 40%;
+            margin: auto;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .texto {
+            flex: 1;
+            margin: 0 20px;
+
+        }
+
+        .image {
+            flex: 0 0 30%;
+
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        .image img {
+            content: url('hogwarts1.jpg');
+
+        }
+
+        @media (min-width:600px) {
+            .image img {
+                content: url('hogwarts1.jpg');
+            }
+
+        }
+
+        @media (min-width: 900px) {
+            .image img {
+                content: url('hogwarts1.jpg');
+            }
+
+        }
+
+        .section {
+            font-size: 400%;
+        }
+
+        .index {
+            color: #ffffff;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <nav style="text-align: center;">
+                Profesores
+            </nav>
+        </h1>
+    </header>
+
+    <h2 class="index">
+        <nav style="text-align: center; background-color: rgba(56, 69, 208, 0.653);">
+            <a style="color: white;" href="Index.html">Inicio</a> &nbsp;
+            <a style="color: white;" href="Casas.html">Casas</a> &nbsp;
+            <a style="color: white;" href="Profesores.html">Profesores</a> &nbsp;
+            <a style="color: white;" href="Lechuza.html">Lechuza</a> &nbsp;
+        </nav>
+    </h2>
+
+
+    <section>
+        <img src="dumbledore.jpg" alt="" width="10px;" height="10px">
+        <p>Albus Dumbledore</p>
+        <img src="mcgonagall.jpg" alt="" width="10px;" height="10px">
+        <p>Minerva Mcgonagall</p>
+        <img src="snape.jpg" alt="" width="10px;" height="10px">
+        <p>Severus Snape</p>
+        <img src="hagrid.jpg" alt="" width="10px;" height="10px">
+        <p>Rubeus Hagrid</p>
+        <img src="sprout.jpg" alt="" width="10px;" height="10px">
+        <p>Pomona Sprout</p>
+        <img src="flitwick.jpg" alt="" width="10px;" height="10px">
+        <p>Filius Flitwick</p>
+
+    </section>
+
+    <footer>
+        <div style="text-align: left; background-color: rgba(56, 69, 208, 0.653);">
+            <p>&copy; 2023 HOGWARTS, S.A.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

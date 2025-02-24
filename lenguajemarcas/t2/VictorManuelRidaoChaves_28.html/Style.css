@@ -1,0 +1,34 @@
+body {
+    background-color: #CFC;
+    font-size: 16px;
+    color: #00F;
+    font-family: Georgia, Cambria, serif;
+}
+
+h1 {
+    color: #F00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    color: #A00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 24px;
+}
+
+.campos
+{
+    color: #060;
+}
+
+b
+{
+    font-size: 20px;
+}
+
+i
+{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Shock</title>
+
+    <link rel="icon" href="favicon.gif" sizes="32x32"> <!--Dimensiones para pantallas de máxima resolución-->
+    <link rel="icon" href="favicon.gif" sizes="16x16"> <!--Dimensiones para navegadoers web comunes-->
+    <link rel="stylesheet" href="style.css">
+    <style>
+          h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            text-align: left;
+            color: #00df56;
+            margin-bottom: 0%;
+
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 10;
+            padding: 5;
+            justify-content: left;
+            color: #fff;
+
+
+        }
+
+        header nav ul li {
+            margin-right: 15px;
+            color: #fff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0dff00ac;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+            /* Esto es para suavizar los cambios de estado */
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: #00ff7b93;
+
+        }
+
+        body {
+            background-image: url(fondo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #00ff40;
+        }
+
+        form {
+            background-color: #a6c1d11c;
+            padding: 60px;
+            border-radius: 10px;
+            max-width: 250px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        form input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #ffffff86;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #32884c76;
+        }
+
+        footer{
+            position: fixed;
+            font-size: large;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>SYSTEM SHOCK</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Sobretema.html">Sobre el tema</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Tareas.html">Lista de tareas</a></li>
+                <li><a href="Contactos.html">Contacto</a></li>
+                <li><a href="Video.html">Vídeo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Contactos -->
+    <section id="contacto">
+        <h2>Formulario</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="nombre">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono">
+
+            <label for="motivo">Motivo de Contacto:</label>
+            <select id="motivo" name="motivo">
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencias</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+
+            <label>
+                <input type="checkbox" id="rgpd" name="rgpd" required>
+                He leído y acepto el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673">aviso legal y la política de privacidad.</a>
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+     <footer>
+        <p>Creado por <i>Víctor Manuel Ridao Chaves</i> &copy; 2025</p>
+    </footer>
+</body>
+</html>

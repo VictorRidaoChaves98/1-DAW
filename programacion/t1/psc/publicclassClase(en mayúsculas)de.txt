@@ -1,0 +1,12 @@
+public class //Clase(en mayúsculas)debe ser igual al nombre del archivo//{
+
+public class HelloWorld {
+	public static void main(String[] args){
+		//programa
+		System.out.println("Hello World!");
+		System.out.println("Hello World!");
+	}
+}
+
+
+HelloWorld --> poner en mayúsculas para clases y evitar problemas.

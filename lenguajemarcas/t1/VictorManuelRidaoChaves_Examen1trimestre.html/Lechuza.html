@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Harry Potter</title>
+    <style>
+        .section {
+            font-size: 40%;
+        }
+
+        .index {
+            color: #ffffff;
+        }
+
+        body {
+
+            margin: 20px;
+            padding: 20px;
+        }
+
+        form {
+
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 300px;
+            margin: 10%;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-color: white;
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        form input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #e223a986;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #32884c76;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <nav style="text-align: center;">
+                Lechuza
+        </h1>
+    </header>
+
+    <h2 class="index">
+        <nav style="text-align: center; background-color: rgba(56, 69, 208, 0.653);">
+            <a style="color: white;" href="Index.html">Inicio</a> &nbsp;
+            <a style="color: white;" href="Casas.html">Casas</a> &nbsp;
+            <a style="color: white;" href="Profesores.html">Profesores</a> &nbsp;
+            <a style="color: white;" href="Lechuza.html">Lechuza</a> &nbsp;
+        </nav>
+    </h2>
+
+    <section style="background-color: blue;">
+        <img src="carta.jpg">
+        <form>
+
+            <label style="color: white;" for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Escribe tu nombre">
+
+            <label style="color: white;" for="email">Lechuza:</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+
+            <label style="color: white;" for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto" size="3">
+                <option value="matricularse">Matricularse</option>
+                <option value="solicitar información">Solicitar información</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <label style="color: white;" for="conocido">¿Cómo nos ha conocido?</label>
+            <div style="color: white;" class="checkbox-group">
+                <label><input type="checkbox" name="conocido" value="amigo"> Un amigo</label>
+                <label><input type="checkbox" name="conocido" value="antiguo alumno"> Un antiguo alumno</label>
+                <label><input type="checkbox" name="conocido" value="callejon diagon"> En el callejón Diagon</label>
+                <label><input type="checkbox" name="conocido" value="otros"> Otros</label>
+            </div>
+
+            <label style="color: white;" for="mensaje">Escribe tu mensaje</label>
+            <textarea id="mensaje" name="mensaje" maxlength="300" placeholder="Escribe el mensaje aquí"
+                rows="4"></textarea>
+
+            <label style="color: white;">
+                <input type="checkbox" id="rgpd" name="rgpd" required>
+                He leído y acepto el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673">aviso legal y la
+                    política de privacidad.</a>
+            </label>
+
+            <br>
+            <p>
+                <mark>@AlbusDumbledore</mark>
+            </p>
+        </form>
+    </section>
+
+    <footer>
+        <div style="text-align: left; background-color: rgba(56, 69, 208, 0.653);">
+            <p>&copy; 2023 HOGWARTS, S.A.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

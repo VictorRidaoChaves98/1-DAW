@@ -1,0 +1,98 @@
+div {
+    width: 300px;
+    height: 16px;
+    border: 1px solid #000000;
+    margin: 1px;
+}
+
+/*negro*/
+.negro-safeColor {
+    background-color: black;
+}
+
+.negro-rgb {
+    background-color: black;
+}
+
+.negro-rgba {
+    background-color: black;
+}
+
+.negro-hex {
+    background-color: black;
+}
+
+/*gris*/
+.gris-safeColor {
+    background-color: grey;
+}
+
+.gris-rgb {
+    background-color: grey;
+}
+
+.gris-rgba {
+    background-color: grey;
+}
+
+.gris-hex {
+    background-color: grey;
+}
+
+/*rojo*/
+.rojo-safeColor {
+    background-color: red;
+}
+
+.rojo-rgb {
+    background-color: red;
+}
+
+.rojo-rgba {
+    background-color: red;
+}
+
+.rojo-hex {
+    background-color: red;
+}
+
+/* rgba */
+.rosa-1 {
+    background-color: rgb(254, 227, 241);
+}
+
+.rosa-2 {
+    background-color: rgb(253, 206, 231);
+}
+
+.rosa-3 {
+    background-color: rgb(255, 160, 211);
+}
+
+.rosa-4 {
+    background-color: rgb(255, 128, 196);
+}
+
+.rosa-5 {
+    background-color: rgb(255, 114, 189);
+}
+
+.rosa-6 {
+    background-color: rgb(255, 85, 176);
+}
+
+.rosa-7 {
+    background-color: rgb(255, 69, 168);
+}
+
+.rosa-8 {
+    background-color: rgb(255, 53, 161);
+}
+
+.rosa-9 {
+    background-color: rgb(255, 41, 155);
+}
+
+.rosa-10 {
+    background-color: rgba(255, 20, 147, 1);
+}

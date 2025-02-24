@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        body {
+            background-color: #007BFF;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #a6c1d1;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 300px;
+            margin: 10%;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        form input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #e223a986;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #32884c76;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulario</h1>
+    <form>
+       
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre">
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" maxlength="30" placeholder="Apellido"
+
+        <label for="email">Email <span style="color: rgb(0, 0, 0);">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="Email">
+
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto" size="3">
+            <option value="presupuesto">Pedir presupuesto web</option>
+            <option value="cita">Solicitar cita previa</option>
+            <option value="otros">Otros</option>
+        </select>
+
+        <label for="conocido">¿Cómo nos ha conocido?</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="conocido" value="amigo"> Un amigo</label>
+            <label><input type="checkbox" name="conocido" value="google"> Googleando</label>
+            <label><input type="checkbox" name="conocido" value="buzoneo"> Buzoneo</label>
+            <label><input type="checkbox" name="conocido" value="otros"> Otros</label>
+        </div>
+        
+        <!--En la zona del mensaje se puede arrastrar con el ratón para hacer el cajón más grande o más pequeño-->
+        <label for="mensaje">Escribe tu mensaje</label>
+        <textarea id="mensaje" name="mensaje" maxlength="300" placeholder="Escribe el mensaje aquí" rows="4"></textarea>
+
+        <label>
+            <input type="checkbox" id="rgpd" name="rgpd" required>
+            He leído y acepto el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673">aviso legal y la política de privacidad.</a>
+        </label>
+
+
+        <button type="submit">Enviar</button>
+        <br>
+        <p>
+            <mark>@VictorRidao</mark>
+        </p>
+    </form>
+
+</body>
+
+</html>

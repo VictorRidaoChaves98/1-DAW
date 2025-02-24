@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen que varía según tamaño</title>
+    <style>
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .texto {
+            flex: 1;
+            margin: 0 20px;
+
+        }
+
+        .image {
+            flex: 0 0 30%;
+
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-left img {
+            content: url('lunacidPortadaPequenia.jpg');
+        }
+
+        .image-right img {
+            content: url('sulfurPequenia.png');
+
+        }
+
+        @media (min-width:600px) {
+            .image-left img {
+                content: url('lunacidPortadaMediana.jpg');
+            }
+
+            .image-right img {
+                content: url('SulfurMediana.jpg');
+
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .image-left img {
+                content: url('lunacidPortadaGrande.jpg');
+            }
+
+            .image-right img {
+                content: url('SulfurGrande.jpg');
+
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(123, 114, 181);">
+
+    <div class="container">
+        <h1>IMAGEN REDIMENSIONADA</h1>
+        <div class="image-container">
+            <div class="image image-left">
+                <img src="lunacidPortadaPequenia.jpg" alt="">
+
+            </div>
+            <div class="texto">
+                <h2><i><u>Lunacid</u></i></h2>
+                <p>Lunacid se presenta como un <mark style="background-color: aqua" ;>Dungeon Crawler</mark> fuertemente
+                    inspirado en títulos como
+                    <b>King's Field</b> y <b>ShadowTower</b>. Hace mucho, la Gran Bestia surgió del mar y cubrió la
+                    tierra con una niebla venenosa que acabó con la vida y la luz del mundo, dando inicio a una era de
+                    aflicción sin parangón. Han pasado siglos, lo que antaño fueran salas sagradas y calles animadas no
+                    son más que meras sombras del ayer. Aquellos que el mundo considera indeseables son lanzados al Gran
+                    Pozo, un agujero donde imperan el caos y la enfermedad.
+                    <br>
+                    Te han lanzado a sus profundidades por crímenes indeterminados, y te despiertas en este mundo
+                    subterráneo iluminado por la Luna. Tu única esperanza es el Antiguo que duerme en sus profundidades.
+                    Pero deberás superar muchos peligros para alcanzar tu metal final.
+                </p>
+            </div>
+        </div>
+        <div class="image-container">
+            <div class="texto">
+                <h2><i><u>Sulfur</u></i></h2>
+                <p><mark style="background-color: rgb(186, 175, 78)" ;>Sulfur</mark> es un shooter lleno de acción,
+                    jugosas armas, combates temerarios y monstruosidades acechando en cada esquina. Mejora las armas
+                    con combinaciones de una gran variedad de encantamientos y accesorios. Explora para descubrir
+                    secretos y encontrar botines y tesoros..., <b>pero con cuidado</b>.
+                    <br>
+                    Piénsatelo bien; todo lo que lleves puede perderse, pero lo que no lleves no estará ahí para
+                    ayudarte. Toda decisión conlleva un riesgo. Siente el ambiente, el suspense y la tribulación de un
+                    mundo en redención. ¿Que pasó? ¿y por qué?. Viaja por brumosos valles, bosques oscuros, las chozas
+                    inmundas del <u>Gremio Negro</u> y atraviesa muros de castillos para ir más allá. Adéntrate y avanza. Las
+                    respuestas llegan a aquellos que escuchan.
+                </p>
+            </div>
+            <div class="image image-right">
+                <img src="sulfurPequenia.png" alt="">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

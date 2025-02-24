@@ -1,0 +1,33 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+}
+.texto-izquierda{
+    width: 260px;
+}
+.texto-derecha{
+    width: 700px;
+}
+.columnas{
+    column-count: 3;
+    column-gap: 20px;
+    display: flex;
+}
+.primera{
+    column-count: auto;
+    column-gap: 20px;
+}
+.segunda{
+    column-count: auto;
+    column-gap: 20px;
+}
+.tercera{
+    column-count: auto;
+    column-gap: 20px;
+}

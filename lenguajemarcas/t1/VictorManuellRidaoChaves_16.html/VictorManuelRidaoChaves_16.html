@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de imágenes 2</title>
+</head>
+
+<body>
+    <h2>Mapa de imágenes 2</h2>
+    <br>
+    <p>A partir de la imagen que podrás descargar a continuación genera un mapa de imagen según las siguientes
+        especificaciones:
+    </p>
+    <ul>
+        <li>El área negro delimitado por los puntos 95,44 y 128,257 envía al usuario a https://www.google.com/ cuando se
+            pulsa. En su interior tiene un área definido por los puntos 104,56 y 117,244 que es inerte cuando es
+            pulsado, generando un hueco.
+        </li>
+        <li>El área negro delimitado por los puntos 128,44 y 235,74 envía al usuario a https://es.wikipedia.org/ cuando
+            se pulsa. En su interior tiene un área definido por los puntos 128,56 y 226,65 que es inerte cuando es
+            pulsado, generando un hueco.
+        </li>
+        <li>El área negro delimitado por los puntos 128,138 y 220,165 envía al usuario a https://adaits.es/ cuando se
+            pulsa. En su interior tiene un área definido por los puntos 128,144 y 211,156 que es inerte cuando es
+            pulsado, generando un hueco.
+        </li>
+    </ul>
+
+    <img src="ImagenEjercicio16deHtml.png" alt="Mapa de la imagen" usemap="#Imagen">
+
+    <map name="#Imagen">
+        <!--IMPORTANTE ORDEN: ELEMENTOS ÁREA SE SUPERPONEN, EL PRIMERO QUE SE PONE ES EL QUE TIENE EL EFECTO-->
+
+        <!--<area shape="" coords="" href="#" alt=""> Quitamos la referencia a dicha área (zona en blanco)--> 
+        <area shape="rect" coords="104,56,117,244" nohref alt="Hueco Google">
+        <area shape="rect" coords="95,44,128,257" alt="Google" href="https://www.google.com/">
+
+        <!--href="#" te mantiene en la misma página (clicar del inicio a la pantalla de inicio)-->
+        <area shape="rect" coords="128,56,226,65" href="#" alt="Hueco Wikipedia">
+        <area shape="rect" coords="128,44,235,74" alt="Wikipedia" href="https://es.wikipedia.org/">
+
+        <!--target="_blank" como si se abriera una página en blanco// rel="noopener" define la relación que tiene el documento y el recurso donde apunta, que no sea clickable porque solo es una página en blanco-->
+        <area shape="rect" coords="128,144,211,156" rel="noopener" target="_blank" alt="Hueco ADA">
+        <area shape="rect" coords="128,138,220,165" alt="ADAits" href="https://adaits.es/">
+
+        <!--https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable-->
+        <!--https://developer.mozilla.org/es/docs/Web/HTML/Element/area-->
+        <!--Enlaces de utilidad para este ejercicio-->
+    </map>
+
+</body>
+
+</html>

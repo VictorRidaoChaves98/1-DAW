@@ -1,0 +1,86 @@
+.darksouls{
+    background-image: url(dark_souls_ii_.jpg);
+    background-size:cover ;
+    background-position:right ;
+    padding: 60px;
+    text-align:center ;
+    text-indent: 10%;
+    word-spacing: 20%;
+    vertical-align: top;
+    font-style: unset;
+    font-size: x-large;
+    color: goldenrod;
+}
+.bloodborne{
+    background-image: url(bloodborne.jpg);
+    background-size:cover ;
+    background-position:center ;
+    padding: 60px;
+    text-align:center ;
+    text-indent: 30%;
+    text-align: right;
+    text-decoration: double;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: lowercase;
+    line-height: 125%;
+    color: red;
+}
+.resident{
+    background-image: url(resident.jpg);
+    background-size:cover ;
+    background-position:center ;
+    padding: 60px;
+    text-align:center ;
+    vertical-align: bottom;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: 200;
+    font-size: larger;
+    color: rgb(255, 162, 0);
+}
+.lunacid{
+    background-image: url(lunacid.jpg);
+    background-size:cover ;
+    background-position:center ;
+    padding: 60px;
+    text-align:center ;
+    text-indent: 30%;
+    text-align: right;
+    text-decoration: double;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: lowercase;
+    line-height: 100%;
+    color: blueviolet;
+}
+.fallout{
+    background-image: url(fallout.jpg);
+    background-size:cover ;
+    background-position:center ;
+    padding: 60px;
+    text-align:center ;
+    vertical-align: bottom;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: 200;
+    font-size: larger;
+    color: chartreuse;
+}
+.finalfantasy{
+    background-image: url(finalfantasy.jpg);
+    background-size:cover ;
+    background-position:center ;
+    padding: 50px;
+    text-align:center ;
+    text-indent: 50%;
+    text-align: right;
+    text-decoration: double;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: uppercase;
+    line-height: 222%;
+    color: aquamarine;
+}

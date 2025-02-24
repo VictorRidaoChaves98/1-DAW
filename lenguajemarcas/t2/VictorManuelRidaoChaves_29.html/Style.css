@@ -1,0 +1,47 @@
+div {
+    width: 1500px;
+    height: 70px;
+    border: 1px solid #000000;
+    
+}
+/* Escala cromática */
+.color-1 {
+    background-color: #ff0064;
+}
+
+/* Color base */
+.color-2 {
+    background-color: #ff1774;
+}
+
+.color-3 {
+    background-color: #ff388b;
+}
+
+.color-4 {
+    background-color: #ff5da6;
+}
+
+.color-5 {
+    background-color: #ff66a3;
+}
+
+.color-6 {
+    background-color: #ff82b4;
+}
+
+.color-7 {
+    background-color: #ff86b7;
+}
+
+.color-8 {
+    background-color: #ff9ec6;
+}
+
+.color-9 {
+    background-color: #ffadcf;
+}
+
+.color-10 {
+    background-color: #ffd0dd;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mapa de imágenes 1</title>
+    </head>
+
+    <body>
+        <h2>Mapa de imágenes 1</h2>
+        <br>
+        <p>A partir de la imagen que podrás descargar a continuación genera un mapa de imagen según las siguientes
+            especificaciones:
+        </p>
+        <ul>
+        
+            <li>El área magenta púrpura está delimitada por los puntos 105,95 y 125,207. Cuando se pulsa envía al usuario a
+                https://www.google.com/.
+            </li>
+        
+        
+            <li>El área verde oscuro está delimitada por los puntos 126,95 y 215,117. Cuando se pulsa envía al usuario a
+                https://es.wikipedia.org/.
+            </li>
+        
+        
+            <li>El área verde azul claro está delimitada por los puntos 128,140 y 215,160. Cuando se pulsa envía al usuario a
+                https://adaits.es/.
+            </li>
+        
+        </ul>
+        
+        
+        <img src="ImagenEjercicio15deHtml.png" alt="Mapa de la imagen" usemap="#Imagen">
+
+        <map name="#Imagen">
+
+        <area shape="rect" coords="105,95,125,207" alt="Google" href="https://www.google.com/">
+        <area shape="rect" coords="126,95,215,117" alt="Wikipedia" href="https://es.wikipedia.org/">
+        <area shape="rect" coords="128,140,215,160" alt="ADAits" href=" https://adaits.es/">
+
+        </map>
+    </body>
+
+</html>

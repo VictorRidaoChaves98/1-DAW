@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        .borde, .borde th, .borde td{
+            border: 1px solid black;
+
+        }
+
+        .bordelinea, .bordelinea th, .bordelinea td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .colorfondo, .colorfondo th, .colorfondo td{
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+        .colorfondo th, .colorfondo td {
+            background-color: blueviolet;
+        }
+
+        .borderedondo, .borderedondo th, .borderedondo td{
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .borderedondo2 th, .borderedondo2 td{
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .bordeestilos, .bordeestilos th, .bordeestilos td{
+            border: 5px;
+            border-color:rgb(188, 87, 238);
+            /* border-style: dashed; */
+            /* border-style: dotted; */
+            /* border-style: solid; */
+            /* border-style: double; */
+            border-style: groove;
+            /* border-style: ridge; */
+            /* border-style: inset; */
+            /* border-style: outset; */
+            /* border-style: none; */
+            /* border-style: hidden; */
+        }
+
+        .sizetabla, .sizetabla th, .sizetabla td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .encabezado, .encabezado th, .encabezado td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .alineacion, .alineacion th, .alineacion td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .alineacion {
+            width: 100%;
+        }
+        .alineacion th{
+            text-align: left;
+        }
+        .alineacion td{
+            text-align: center;
+        }
+
+        #padding th, #padding td{
+            padding: 15px;
+        }
+
+        #spacing {
+            border-spacing: 15px;
+        }
+
+        .zebrahorizontal {
+            width: 100%;
+        }
+
+        .zebrahorizontal tr:nth-child(odd) {
+            background-color: rgb(201, 153, 246);
+        }
+
+        .zebravertical {
+            width: 100%;
+        }
+
+        .zebravertical td:nth-child(odd), .zebravertical th:nth-child(odd) {
+            background-color: rgb(201, 153, 246);
+        }
+
+        .zebracombinacion {
+            width: 100%;
+        }
+
+        .zebracombinacion tr:nth-child(odd) {
+            background-color: rgba(180, 105, 251, 0.504);
+        }
+        .zebracombinacion td:nth-child(odd), .zebracombinacion th:nth-child(odd) {
+            background-color: rgba(180, 105, 251, 0.504);
+        }
+
+        .divisionhorizontal {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .divisionhorizontal tr {
+            border-bottom: 1px solid blueviolet;
+        }
+
+        .filaresaltada {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .filaresaltada tr {
+            border-bottom: 1px solid blueviolet;
+        }
+
+        .filaresaltada tr:hover {
+            background-color:  rgb(201, 153, 246);
+        }
+
+        .calendario {
+            width: 100%;
+            
+        }
+        .calendario , .calendario td, .calendario th{
+           
+            border: 1px solid blueviolet;
+            border-collapse: collapse;
+        }
+
+        td:hover {
+            background-color: #ffcccb; /* Color al pasar el cursor */
+            transform: translateY(-5px); /* Elevación opcional */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <h2>Tabla simple</h2>
+    <table>
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h2>Tabla con borde</h2>
+    <table class="borde">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h2>Tabla con borde de una línea</h2>
+    <table class="bordelinea">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h2>Tabla con color de fondo</h2>
+    <table class="colorfondo">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <h2>Tabla con bordes redondeados</h2>
+    <table class="borderedondo">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <h2>Tabla con bordes redondeados 2</h2>
+    <table class="borderedondo2">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h2>Tabla con bordes de diferentes estilos</h2>
+    <table class="bordeestilos">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h2>Tamaño de tablas</h2>
+    <table class="sizetabla" style="width: 100%;">
+        <tr>
+            <th style="width: 60%;">Casas</th>
+            <th style="width: 30%;">Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr style="height: 100px;">
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h2>Encabezados de las tablas</h2>
+    <h3>Encabezado horizontal</h3>
+    <table class="encabezado">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h3>Encabezado vertical</h3>
+    <table class="encabezado">
+        <tr>
+            <th>Casas</th>
+            <td>Hufflepuff</td>
+            <td>Ravenclaw</td>
+            <td>Slyterin</td>
+            <td>Gryffindor</td>
+        </tr>
+        <tr>
+            <th>Puntos</th>
+            <td>4.000</td>
+            <td>5.000</td>
+            <td>700</td>
+            <td>7.000</td>
+        </tr>
+        <tr>
+            <th>Posición</th>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+
+    </table>
+
+    <h2>Alineación</h2>
+    <table class="alineacion">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h2>Encabezado de varias columnas</h2>
+    <h3>Tabla normal</h3>
+    <table class="alineacion">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Animal</th>
+        </tr>
+        <tr>
+            <td>Rowena</td>
+            <td>Ravenclaw</td>
+            <td>Águila</td>
+        </tr>
+        <tr>
+            <td>Helga</td>
+            <td>Hufflepuff</td>
+            <td>Tejón</td>
+        </tr>
+        <tr>
+            <td>Salazar</td>
+            <td>Slyterin</td>
+            <td>Serpiente</td>
+        </tr>
+        <tr>
+            <td>Godric</td>
+            <td>Gryffindor</td>
+            <td>León</td>
+        </tr>
+    </table>
+
+    <h3>Tabla con casillas unidas</h3>
+    <table class="alineacion">
+        <tr>
+            <th colspan="2">Nombre</th>
+            <th>Animal</th>
+        </tr>
+        <tr>
+            <td>Rowena</td>
+            <td>Ravenclaw</td>
+            <td>Águila</td>
+        </tr>
+        <tr>
+            <td>Helga</td>
+            <td>Hufflepuff</td>
+            <td>Tejón</td>
+        </tr>
+        <tr>
+            <td>Salazar</td>
+            <td>Slyterin</td>
+            <td>Serpiente</td>
+        </tr>
+        <tr>
+            <td>Godric</td>
+            <td>Gryffindor</td>
+            <td>León</td>
+        </tr>
+    </table>
+
+    <h2>Cabecera múltiple</h2>
+    <table class="alineacion">
+        <tr>
+            <th colspan="2">Datos personales</th>
+            <th colspan="2">Símbolos</th>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Animal</th>
+            <th>Objeto</th>
+        </tr>
+        <tr>
+            <td>Rowena</td>
+            <td>Ravenclaw</td>
+            <td>Águila</td>
+            <td>Corona</td>
+        </tr>
+        <tr>
+            <td>Helga</td>
+            <td>Hufflepuff</td>
+            <td>Tejón</td>
+            <td>Copa</td>
+        </tr>
+        <tr>
+            <td>Salazar</td>
+            <td>Slyterin</td>
+            <td>Serpiente</td>
+            <td>Guardapelo</td>
+        </tr>
+        <tr>
+            <td>Godric</td>
+            <td>Gryffindor</td>
+            <td>León</td>
+            <td>Espada</td>
+        </tr>
+    </table>
+
+    <h2>Tabla con título</h2>
+    <table class="alineacion">
+        <caption>Fundadores de Hogwarts</caption>
+        <tr>
+            <th colspan="2">Datos personales</th>
+            <th colspan="2">Símbolos</th>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Animal</th>
+            <th>Objeto</th>
+        </tr>
+        <tr>
+            <td>Rowena</td>
+            <td>Ravenclaw</td>
+            <td>Águila</td>
+            <td>Corona</td>
+        </tr>
+        <tr>
+            <td>Helga</td>
+            <td>Hufflepuff</td>
+            <td>Tejón</td>
+            <td>Copa</td>
+        </tr>
+        <tr>
+            <td>Salazar</td>
+            <td>Slyterin</td>
+            <td>Serpiente</td>
+            <td>Guardapelo</td>
+        </tr>
+        <tr>
+            <td>Godric</td>
+            <td>Gryffindor</td>
+            <td>León</td>
+            <td>Espada</td>
+        </tr>
+    </table>
+
+    <h2>Padding y Spacing</h2>
+    <h3>Tabla con padding</h3>
+    <table class="borde" id="padding">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h3>Tabla con spacing</h3>
+    <table class="borde" id="spacing">
+        <tr>
+            <th>Casas</th>
+            <th>Puntos</th>
+            <th>Posición</th>
+        </tr>
+        <tr>
+            <td>Hufflepuff</td>
+            <td>4.000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Ravenclaw</td>
+            <td>5.000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Slytherin</td>
+            <td>700</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Gryffindor</td>
+            <td>7.000</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h2>Colspan y Rowspan</h2>
+    <h3>Colspan</h3>
+    <table class="alineacion">
+        <tr>
+            <th colspan="2">Nombre</th>
+            <th>Casa</th>
+        </tr>
+        <tr>
+            <td>Harry</td>
+            <td>Potter</td>
+            <td>Gryffindor</td>
+        </tr>
+        <tr>
+            <td>Draco</td>
+            <td>Malfoy</td>
+            <td>Slytherin</td>
+        </tr>
+    </table>
+
+    <h3>Rowspan</h3>
+    <table class="alineacion">
+        <tr>
+            <th rowspan="2">Nombre</th>
+            <td>Harry</td>
+            <td>Draco</td>
+        </tr>
+        <tr>
+            <td>Potter</td>
+            <td>Malfoy</td>
+        </tr>
+        <tr>
+            <th>Casa</th>
+            <td>Gryffindor</td>
+            <td>Slytherin</td>
+        </tr>
+    </table>
+
+    <h2>Estilos de tablas</h2>
+    <h3>Rayas de cebra horizontal</h3>
+    <table class="zebrahorizontal">
+        <tr>
+            <th colspan="2">Datos personales</th>
+            <th colspan="2">Símbolos</th>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Animal</th>
+            <th>Objeto</th>
+        </tr>
+        <tr>
+            <td>Rowena</td>
+            <td>Ravenclaw</td>
+            <td>Águila</td>
+            <td>Corona</td>
+        </tr>
+        <tr>
+            <td>Helga</td>
+            <td>Hufflepuff</td>
+            <td>Tejón</td>
+            <td>Copa</td>
+        </tr>
+        <tr>
+            <td>Salazar</td>
+            <td>Slyterin</td>
+            <td>Serpiente</td>
+            <td>Guardapelo</td>
+        </tr>
+        <tr>
+            <td>Godric</td>
+            <td>Gryffindor</td>
+            <td>León</td>
+            <td>Espada</td>
+        </tr>
+    </table>
+
+    <h3>Rayas de cebra vertical</h3>
+    <table class="zebravertical">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Animal</th>
+            <th>Objeto</th>
+        </tr>
+        <tr>
+            <td>Rowena</td>
+            <td>Ravenclaw</td>
+            <td>Águila</td>
+            <td>Corona</td>
+        </tr>
+        <tr>
+            <td>Helga</td>
+            <td>Hufflepuff</td>
+            <td>Tejón</td>
+            <td>Copa</td>
+        </tr>
+        <tr>
+            <td>Salazar</td>
+            <td>Slyterin</td>
+            <td>Serpiente</td>
+            <td>Guardapelo</td>
+        </tr>
+        <tr>
+            <td>Godric</td>
+            <td>Gryffindor</td>
+            <td>León</td>
+            <td>Espada</td>
+        </tr>
+    </table>
+
+    <h3>Combinación de rayas horizontales y verticales</h3>
+    <table class="zebracombinacion">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Animal</th>
+            <th>Objeto</th>
+        </tr>
+        <tr>
+            <td>Rowena</td>
+            <td>Ravenclaw</td>
+            <td>Águila</td>
+            <td>Corona</td>
+        </tr>
+        <tr>
+            <td>Helga</td>
+            <td>Hufflepuff</td>
+            <td>Tejón</td>
+            <td>Copa</td>
+        </tr>
+        <tr>
+            <td>Salazar</td>
+            <td>Slyterin</td>
+            <td>Serpiente</td>
+            <td>Guardapelo</td>
+        </tr>
+        <tr>
+            <td>Godric</td>
+            <td>Gryffindor</td>
+            <td>León</td>
+            <td>Espada</td>
+        </tr>
+    </table>
+
+    <h3>Divisiones horizontales</h3>
+    <table class="divisionhorizontal">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Animal</th>
+            <th>Objeto</th>
+        </tr>
+        <tr>
+            <td>Rowena</td>
+            <td>Ravenclaw</td>
+            <td>Águila</td>
+            <td>Corona</td>
+        </tr>
+        <tr>
+            <td>Helga</td>
+            <td>Hufflepuff</td>
+            <td>Tejón</td>
+            <td>Copa</td>
+        </tr>
+        <tr>
+            <td>Salazar</td>
+            <td>Slyterin</td>
+            <td>Serpiente</td>
+            <td>Guardapelo</td>
+        </tr>
+        <tr>
+            <td>Godric</td>
+            <td>Gryffindor</td>
+            <td>León</td>
+            <td>Espada</td>
+        </tr>
+    </table>
+
+    <h3>Filas resaltadas al paso del ratón</h3>
+    <table class="filaresaltada">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Animal</th>
+            <th>Objeto</th>
+        </tr>
+        <tr>
+            <td>Rowena</td>
+            <td>Ravenclaw</td>
+            <td>Águila</td>
+            <td>Corona</td>
+        </tr>
+        <tr>
+            <td>Helga</td>
+            <td>Hufflepuff</td>
+            <td>Tejón</td>
+            <td>Copa</td>
+        </tr>
+        <tr>
+            <td>Salazar</td>
+            <td>Slyterin</td>
+            <td>Serpiente</td>
+            <td>Guardapelo</td>
+        </tr>
+        <tr>
+            <td>Godric</td>
+            <td>Gryffindor</td>
+            <td>León</td>
+            <td>Espada</td>
+        </tr>
+    </table>
+
+    <h2>Colgroup</h2>
+    <table class="calendario">
+        <colgroup>
+            <col span="2" style="visibility: collapse;">
+            <col span="3" style="background-color: rgb(178, 255, 197);">
+        </colgroup>
+        <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sábado</th>
+            <th>Domingo</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+        </tr>
+        <tr>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+            <th>14</th>
+        </tr>
+        <tr>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+            <th>18</th>
+            <th>19</th>
+            <th>20</th>
+            <th>21</th>
+        </tr>
+        <tr>
+            <th>22</th>
+            <th>23</th>
+            <th>24</th>
+            <th>25</th>
+            <th>26</th>
+            <th>27</th>
+            <th>28</th>
+        </tr>
+    </table>
+
+    <h2>Imagen de fondo</h2>
+    <table class="calendario" style="background-image: url(./img/landscape.jpg); color: white;">
+        <tr style="background-color: rgba(0, 0, 0, 0.491);">
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sábado</th>
+            <th>Domingo</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+        </tr>
+        <tr>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+            <th>14</th>
+        </tr>
+        <tr>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+            <th>18</th>
+            <th>19</th>
+            <th>20</th>
+            <th>21</th>
+        </tr>
+        <tr>
+            <th>22</th>
+            <th>23</th>
+            <th>24</th>
+            <th>25</th>
+            <th>26</th>
+            <th>27</th>
+            <th>28</th>
+        </tr>
+    </table>
+    
+</body>
+</html>

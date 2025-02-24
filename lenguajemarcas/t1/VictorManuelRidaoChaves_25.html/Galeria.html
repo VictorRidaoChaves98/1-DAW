@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Shock</title>
+
+    <link rel="icon" href="favicon.gif" sizes="32x32"> <!--Dimensiones para pantallas de máxima resolución-->
+    <link rel="icon" href="favicon.gif" sizes="16x16"> <!--Dimensiones para navegadoers web comunes-->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            text-align: left;
+            color: #00df56;
+            margin-bottom: 0%;
+
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 10;
+            padding: 5;
+            justify-content: left;
+            color: #fff;
+
+
+        }
+
+        header nav ul li {
+            margin-right: 15px;
+            color: #fff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0dff00ac;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+            /* Esto es para suavizar los cambios de estado */
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: #00ff7b93;
+
+        }
+
+        body {
+            background-image: url(fondo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #00ff40;
+        }
+
+        .galeria {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: #00df5626;
+        
+        }
+
+        .galeria-item {
+            text-align: center;
+            /* Centra el texto debajo de cada imagen */
+            max-width: 200px;
+            /* Limita el ancho de cada elemento */
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 170, 255, 0.1);
+        }
+
+        .galeria-item p {
+            margin-top: 10px;
+            /* Espaciado entre la imagen y la descripción */
+            font-size: 18px;
+            color: #ffffff;
+            /* Color del texto descriptivo */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>SYSTEM SHOCK</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Sobretema.html">Sobre el tema</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Tareas.html">Lista de tareas</a></li>
+                <li><a href="Contactos.html">Contacto</a></li>
+                <li><a href="Video.html">Vídeo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Galería de imágenes-->
+
+    <section id="galeria">
+        <h2 style="text-align: left; margin-top: 20px;">GALERÍA DE IMÁGENES</h2>
+        <div class="galeria">
+            <!-- Imagen 1 -->
+            <div class="galeria-item">
+                <img src="ciudadelaantigua.jpg" alt="imagen 1">
+                <p>La Estación Ciudadela en el videojuego de 1994</p>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="galeria-item">
+                <img src="ciudadelanueva.jpg" alt="imagen 2">
+                <p>La Estación Ciudadela en el remake de 2023</p>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="galeria-item">
+                <img src="shodanprehacked.jpg" alt="imagen 3">
+                <p>Shodan antes de ser hackeada</p>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="galeria-item">
+                <img src="shodanhacked.jpg" alt="imagen 4">
+                <p>Shodan luego de su hackeo</p>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="galeria-item">
+                <img src="hackermale.jpg" alt="imagen 5">
+                <p>Protagonista</p>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="galeria-item">
+                <img src="medical.jpg" alt="imagen 6">
+                <p>Bahía médica y donde inicia el juego</p>
+            </div>
+
+            <!-- Imagen 6 -->
+            <div class="galeria-item">
+                <img src="cyber.jpg" alt="imagen 7">
+                <p>El ciberespacio</p>
+            </div>
+
+            <!-- Imagen 7 -->
+            <div class="galeria-item">
+                <img src="REAVER.jpg" alt="imagen 8">
+                <p>Arte conceptual de un Cortex Reaver</p>
+            </div>
+
+            <!-- Imagen 8 -->
+            <div class="galeria-item">
+                <img src="grove.jpg" alt="imagen 9">
+                <p>Arboleda Delta</p>
+            </div>
+
+            <!-- Imagen 9 -->
+            <div class="galeria-item">
+                <img src="puente.jpg" alt="imagen 10">
+                <p>Puente de mando</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    
+    <footer>
+        <div style="font-size: large;">
+        <p>Creado por <i>Víctor Manuel Ridao Chaves</i> &copy; 2025</p>
+        </div>
+    </footer>
+   
+
+</body>
+
+</html>

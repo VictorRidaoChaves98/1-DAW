@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas 2</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 30%;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 3px solid #ffffff;
+            background-color: rgb(230, 152, 152);
+            padding: 20px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-collapse: separate;
+            border-radius: 10px;
+
+        }
+
+        table tr:hover td {
+            background-color: rgba(229, 31, 31, 0.729);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Tablita 2</h1>
+
+    <p style="text-align: center;">Al pasar el cursor por encima te lleva a la wikifan con información sobre las
+        diferentes Casas de Hogwarts.</p>
+
+    <table>
+        <tr>
+            <th>CASA</th>
+            <th>PUNTOS</th>
+            <th>POSICIÓN</th>
+        </tr>
+        <tr onclick="window.location.href='https://harrypotter.fandom.com/es/wiki/Gryffindor';">
+            <td>Griffindor</td>
+            <td>600</td>
+            <td>1º</td>
+        </tr>
+        <tr onclick="window.location.href='https://harrypotter.fandom.com/es/wiki/Hufflepuff';">
+            <td>Hufflepuff</td>
+            <td>400</td>
+            <td>3º</td>
+        </tr>
+        <tr onclick="window.location.href='https://harrypotter.fandom.com/es/wiki/Ravenclaw';">
+            <td>Ravenclaw</td>
+            <td>500</td>
+            <td>2º</td>
+        </tr>
+        <tr onclick="window.location.href='https://harrypotter.fandom.com/es/wiki/Slytherin';">
+            <td>Slytherin</td>
+            <td>100</td>
+            <td>4º</td>
+        </tr>
+    </table>
+</body>
+
+</html>

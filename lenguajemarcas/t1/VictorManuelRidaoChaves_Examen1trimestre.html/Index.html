@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Harry Potter</title>
+    <style>
+        /* img {
+            display: block;
+            width: 40%;
+            margin: auto;
+        } */
+
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .texto {
+            flex: 1;
+            margin: 0 20px;
+
+        }
+
+        .image {
+            flex: 0 0 30%;
+
+        }
+
+        /* img {
+            width: 50%;
+            height: auto;
+        } */
+
+        .image img {
+            content: url('hogwarts1.jpg');
+
+        }
+
+        @media (min-width:600px) {
+            .image img {
+                content: url('hogwarts1.jpg');
+            }
+
+        }
+
+        @media (min-width: 900px) {
+            .image img {
+                content: url('hogwarts1.jpg');
+            }
+
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <nav style="text-align: center;">
+                Bienvenidos a Hogwarts
+            </nav>
+        </h1>
+        <img src="hogwarts1.jpg" alt="" width="550px;" height="200px">
+    </header>
+
+    <h2 class="index">
+        <nav style="text-align: center; background-color: rgba(56, 69, 208, 0.653);">
+            <a style="color: white;" href="Index.html">Inicio</a> &nbsp;
+            <a style="color: white;" href="Casas.html">Casas</a> &nbsp;
+            <a style="color: white;" href="Profesores.html">Profesores</a> &nbsp;
+            <a style="color: white;" href="Lechuza.html">Lechuza</a> &nbsp;
+        </nav>
+    </h2>
+
+    <section style="background-color: blue; font-size: large; color: #ffffff;;">
+        <img src="hogwarts2.jpg" alt="" width="100px;" height="200px">
+        <p>Te doy la bienvenida al Colegio Hogwarts de Magia y Hechicería. (sí, fíjate, nosotros también nos hemos
+            metido en esto del Internet).</p>
+        <br>
+        <p>Pasa, ponte cómodo y con una cerveza de mantequilla en mano navega tranquilamente conociendo más de nuestro
+            maravilloso colegio.</p>
+        <br>
+        <p>Pero no te quedes ahí quieto, hombre, ¡Pasa!</p>
+    </section>
+    <section style="background-color: aqua; font-size: large; color: #000000;">
+        <img src="lechuza.jpg" alt="Mapa de la imagen" usemap="#Imagen">
+
+        <map name="Imagen">
+
+            <area shape="rect" coords="163,94,303,179" nohref alt="Lechuza" href="!Lechuza.html">
+            
+                
+        </map>
+            <h3 style="text-align: center;">¡Envíanos una carta!</h3>
+            <p>
+                Si tienes problemas para formalizar tu matrícula, la varita ha dejado de funcionarte, o te gustaría
+                visitar
+                el colegio antes de ingresar, haz clic en la carta de la lechuza para contactar con nosotros.
+            </p>
+    </section>
+
+
+    <footer>
+        <div style="text-align: left; background-color: rgba(56, 69, 208, 0.653);">
+            <p>&copy; 2023 HOGWARTS, S.A.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
