@@ -1,0 +1,71 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: none;
+    background-color: beige;
+    font-size: x-large;
+
+}
+
+.anillo{
+    transform: translateX(150px);
+
+}
+
+.hobbits {
+    width: 20%;
+    background-color: #eee;
+    text-align: center;
+    border-collapse: collapse;
+    border: none;
+}
+
+
+.primera {
+    width: 80%;
+    font-size: 2em;
+    background-color: beige;
+    text-align: center;
+    font-weight: bold;
+    color: darkred;
+}
+
+.razas{
+    background-color: azure;
+}
+
+.razas li{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-weight: bold;
+}
+
+
+a {
+    
+    color:blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    
+}
+
+tfoot{
+    text-align: center;
+}
