@@ -57,12 +57,13 @@ li {
 
 a {
     
-    color:blue;
+    color: blueviolet;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: none;
+    color: blueviolet;
     
 }
 
