@@ -41,3 +41,16 @@ td:nth-child(3){
 td:nth-child(4){
     background-color: blue;
 }
+
+/* td+td{
+    background-color: red;
+}
+
+td+td+td{
+    background-color:green;
+
+}
+
+td+td+td+td{
+    background-color: blue;
+} */

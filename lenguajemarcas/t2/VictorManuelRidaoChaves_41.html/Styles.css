@@ -72,9 +72,10 @@ h2{
 }
 
 .protas1 li{
-    list-style: ethiopic-numeric;
+    list-style: ethiopic-numeric inside;
     margin-left: 150px;
     padding-bottom: 15px;
+
 }
 
 .anime2 li{
@@ -94,7 +95,7 @@ h2{
 }
 
 .protas3 li{
-    list-style: georgian;
+    list-style: georgian inside;
     margin-left: 200px;
     padding-bottom: 15px;
 }
@@ -116,7 +117,7 @@ h2{
 }
 
 .protas5 li{
-    list-style: japanese-informal;
+    list-style: japanese-informal inside;
     margin-left: 180px;
     padding-bottom: 15px;
 }
