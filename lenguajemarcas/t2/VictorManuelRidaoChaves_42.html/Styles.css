@@ -1,16 +1,24 @@
-table{
+table {
+   table-layout: fixed;
+   border: 2px solid;
+   border-spacing: 30px 10px;
    width: 200px;
 }
 
-caption{
+caption {
+   caption-side: bottom;
 
 }
 
-tr{
-
+td {
+   border: 2px solid;
+   width: 200px;
 }
 
-td{
-
+td:empty,
+td:empty+td {
+   display: none;
 }
+
+
 
