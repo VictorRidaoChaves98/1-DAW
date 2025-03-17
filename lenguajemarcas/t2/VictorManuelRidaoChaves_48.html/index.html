@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body {
+            width: 1000px;
+            font-size: x-large;
+        }
+
+        h1 {
+            position: static;
+            top: 0;
+            background-color: #e1f4fc;
+            padding: 20px;
+            z-index: 10;
+            margin: 3px;
+        }
+
+        .relative {
+            position: relative;
+            left: 50px;
+            border: 2px dotted purple;
+            width: 800px;
+            margin: 20px;
+        }
+
+        .fixed {
+            position: fixed;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-size: smaller;
+            bottom: 300px;
+            right: 600px;
+
+
+        }
+
+        .absolute {
+            position: absolute;
+            top: 60px;
+            left: 300px;
+            width: 200px;
+            height: 80px;
+            border: 3px solid blue;
+            background-color: rgb(194, 227, 251);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedad position: static</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod velit quis facilis harum nemo sit vitae
+        a consectetur tenetur aliquid error, amet, cupiditate inventore molestias ducimus impedit! Ad, temporibus
+        pariatur?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi odio eum alias voluptates placeat
+        nam nobis quae beatae aliquid tempora rerum hic repellat nulla, officia eveniet, dignissimos accusamus atque
+        quod.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eius sed laboriosam provident voluptates
+        pariatur dolor libero ut adipisci repudiandae sequi qui, optio molestias autem repellat ducimus voluptas? Quo,
+        corporis?</p>
+
+    <h1>Propiedad position: relative</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus necessitatibus quidem ex totam. Cupiditate,
+        fugit labore magni libero impedit sapiente at repudiandae quaerat adipisci illum. Minus esse voluptates impedit
+        earum. </p>
+    <p class="relative">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae aut necessitatibus porro
+        expedita
+        recusandae, commodi, a fugiat facilis placeat sint nam? Odit magnam adipisci consequuntur, velit eos fugit!
+        Eligendi, assumenda?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, aliquid nostrum laboriosam maxime, neque quam
+        iusto odit commodi tenetur praesentium est nulla earum eveniet repudiandae eum iste, magni sit cupiditate! </p>
+
+    <h1>Propiedad position: fixed</h1>
+
+    <p>Este párrafo es normal</p>
+    <div class="fixed">
+        <p>Este es el elemento con position:fixed</p>
+    </div>
+    <p>Este párrafo es normal </p>
+
+    <h1>Propiedad position: absolute</h1>
+    <div>
+        <div class="relative">
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+            <p>Contenedor con position: relative</p>
+
+            <div class="absolute">
+                <p>Contenedor con position:absolute</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+</body>
+
+</html>
