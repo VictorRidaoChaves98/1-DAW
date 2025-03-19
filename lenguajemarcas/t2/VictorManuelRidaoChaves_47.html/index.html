@@ -6,57 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display</title>
     <style>
-        li{
+        p{
             background-color: yellowgreen;
-            list-style-type: none;
         }
-        .inline {
+        .a{
+            display: none;
+        }
+
+        .b{
             display: inline;
         }
 
-        .block{
+        .c{
             display: block;
         }
 
-        .inline-block{
-            display:inline-block;
+        .d{
+            display: inline-block;
+            width: 150px;
+            height: 80px;
         }
+
     </style>
 </head>
 
 <body>
     <h1>display: none</h1>
 
+    <p class="a">Bloque 1</p>
+    <p class="a">Bloque 2</p>
+    <p class="a">Bloque 3</p>
+
     <h1>display: inline</h1>
-    <ul class="inline">
-        <li>Bloque 1</li>
-        <li>Bloque 2</li>
-        <li>Bloque 3</li>
-    </ul>
+
+    <p class="b">Bloque 1</p>
+    <p class="b">Bloque 2</p>
+    <p class="b">Bloque 3</p>
 
     <h1>display: block</h1>
-    <ul class="block">
-        <li>Bloque 1</li>
-        <li>Bloque 2</li>
-        <li>Bloque 3</li>
-    </ul>
+
+    <p class="c">Bloque 1</p>
+    <p class="c">Bloque 2</p>
+    <p class="c">Bloque 3</p>
 
     <h1>display: inline-block</h1>
-    <ul class="inline-block">
-        <li>Bloque 1</li>
-        <li>Bloque 2</li>
-        <li>Bloque 3</li>
-    </ul>
+
+    <p class="d">Bloque 1</p>
+    <p class="d">Bloque 2</p>
+    <p class="d">Bloque 3</p>
 
     <h1>display: combinación</h1>
-    <ul>
-        <li class="inline">Bloque 1</li>
-        <li class="block">Bloque 2</li>
-        <li class="inline-block">Bloque 3</li>
-        <li class="block">Bloque 4</li>
-        <li class="inline-block">Bloque 5</li>
-        <li class="inline">Bloque 6</li>
-    </ul>
+
+    <p class="a">Bloque 1</p>
+    <p class="b">Bloque 2</p>
+    <p class="c">Bloque 3</p>
+    <p class="d">Bloque 4</p>
+    <p class="a">Bloque 5</p>
+    <p class="c">Bloque 6</p>
+    <p class="d">Bloque 7</p>
+    <p class="b">Bloque 8</p>
+
 </body>
 
 </html>
