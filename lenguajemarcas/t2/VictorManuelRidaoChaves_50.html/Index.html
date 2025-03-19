@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z-index</title>
     <style>
-        
+        .contenedor {
+            position: absolute;
+            width: 600px;
+            height: 300px;
+            margin: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            position: absolute;
+        }
+
+        .green {
+            background-color: green;
+            top: 70px;
+            left: 100px;
+            z-index: 1;
+        }
+
+        .yellow {
+            background-color: yellow;
+            top: 80px;
+            left: 280px;
+            z-index: 2;
+        }
+
+        .blue {
+            background-color: blue;
+            top: 120px;
+            left: 150px;
+            z-index: 3;
+        }
+
+        .red {
+            background-color: red;
+            top: 20px;
+            left: 50px;
+            z-index: 4;
+        }
+
+        .blueviolet {
+            background-color: blueviolet;
+            top: 200px;
+            left: 110px;
+            z-index: 5;
+        }
     </style>
 </head>
+
 <body>
-    
+    <h1>Propiedad Z-index</h1>
+    <div class="contenedor">
+        <div class="red box"></div>
+        <div class="blueviolet box"></div>
+        <div class="blue box"></div>
+        <div class="yellow box"></div>
+        <div class="green box"></div>
+    </div>
 </body>
+
 </html>
