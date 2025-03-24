@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de navegación</title>
+    <style>
+        header{
+            background-color: rgb(110, 162, 110);
+        
+        }
+
+        img{
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+        
+        }
+
+        nav ul li{
+            display: flex;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="paises.jpg" alt="Imagen" width="74"></a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Países</a>
+                    <ul class="submenu" id="submenu1">
+                        <li><a href="#">España</a></li>
+                        <li><a href="#">Argelia</a></li>
+                        <li><a href="#">Alemania</a></li>
+                        <li><a href="#">Italia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ciudades</a>
+                    <ul class="submenu" id="submenu2">
+                        <li><a href="#">Cádiz</a></li>
+                        <li><a href="#">Sevilla</a></li>
+                        <li><a href="#">A Coruña</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
