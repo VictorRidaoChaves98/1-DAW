@@ -6,34 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú de navegación</title>
     <style>
-        header{
+        header {
             background-color: rgb(110, 162, 110);
-        
-        }
-
-        img{
-            width: 200px;
-            height: 150px;
-            padding: 20px;
+            padding: 10px;
 
         }
 
-        ul{
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;;
+        }
+
+        nav img {
+
+            width: 100px;
+            height: 80px;
+
+        }
+
+        nav ul {
             list-style: none;
             display: flex;
-        
+
         }
 
-        nav ul li{
-            display: flex;
+        nav ul li {
+            position: relative;
+            border: 3px solid rgb(74, 124, 74);
+            padding: 5px;
+            margin: 5px;
         }
 
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 20px;
+            display: block;
 
+        }
 
+        nav ul li a:hover {
+            background-color: rgba(93, 195, 134, 0.489);
+        }
 
+        .submenu {
+            display: none;
+            position: absolute;
 
+        }
 
+        .submenu1 {
+            width: 100%;
+        }
 
+        .submenu li a {
+            padding: 10px;
+            display: block;
+            background-color: #7cd6c48a;
+        }
+
+        .submenu li a:hover {
+            background-color: #6fcdb58d;
+        }
+
+        nav ul li:hover .submenu {
+            display: block;
+        }
 
     </style>
 </head>

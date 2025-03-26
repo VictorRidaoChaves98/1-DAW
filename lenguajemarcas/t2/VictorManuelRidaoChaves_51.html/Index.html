@@ -1,20 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overflow</title>
+    <title>CSS - Overflow</title>
     <style>
+        body {
+            text-align: center;
+            background-color: #cbc8d4;
+        }
 
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 2px solid #7352cb;
+            background-color: #cdc2ed;
+            color: #ef1919;
+            padding: 5px;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+            white-space: nowrap;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+
+        .scroll-x {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+        }
+
+        .scroll-y {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Valores de Overflow</h1>
-    
-    
-    
+
+    <h1>Ejemplo de Overflow en CSS</h1>
+
+    <div class="container">
+        <div class="box visible">
+            <strong>Visible</strong><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellat mollitia tenetur, commodi
+                consectetur sunt, at, obcaecati ducimus voluptates pariatur doloribus minima distinctio laboriosam?
+                Aperiam modi alias fugit adipisci ab!</p>
+        </div>
+        <div class="box hidden">
+            <strong>Hidden</strong><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis maiores amet dolorum error laborum id
+                totam, dolore quae velit perspiciatis porro, eligendi obcaecati qui? Delectus accusamus tempora labore
+                necessitatibus.</p>
+        </div>
+        <div class="box scroll">
+            <strong>Scroll</strong><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellendus facilis architecto autem
+                recusandae nam voluptas quo iusto officia praesentium esse voluptatibus quasi adipisci fuga hic, culpa
+                accusantium aliquam unde.</p>
+        </div>
+        <div class="box auto">
+            <strong>Auto</strong><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis adipisci, obcaecati voluptatem, unde
+                omnis illum necessitatibus possimus eius eum dolorum pariatur ipsum libero beatae nemo optio deleniti
+                mollitia sint corrupti.</p>
+        </div>
+        <div class="box scroll-x">
+            <strong>Scroll Horizontal</strong><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis adipisci, obcaecati voluptatem, unde
+                omnis illum necessitatibus possimus eius eum dolorum pariatur ipsum libero beatae nemo optio deleniti
+                mollitia sint corrupti.</p>
+        </div>
+        <div class="box scroll-y">
+            <strong>Scroll Vertical</strong><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis adipisci, obcaecati voluptatem, unde
+                omnis illum necessitatibus possimus eius eum dolorum pariatur ipsum libero beatae nemo optio deleniti
+                mollitia sint corrupti.</p>
+        </div>
+    </div>
+
 </body>
 
 </html>
