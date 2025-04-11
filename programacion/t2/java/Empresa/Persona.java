@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 
 public class Persona {
     public String nombre;
@@ -6,6 +7,10 @@ public class Persona {
     public Persona(String nombre, String apellidos) {
         this.nombre = nombre;
         this.apellidos = apellidos;
+    }
+
+    public Persona(int id, String nombre2, LocalDate fechaNacimiento) {
+        //TODO Auto-generated constructor stub
     }
 
     public String getNombre() {
