@@ -1,0 +1,265 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    background-color: rgb(228, 126, 126);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/*Harry Potter*/
+
+.tarjetaharry {
+    width: 240px;
+    height: 450px;
+    box-shadow: 5px 5px 8px gray;
+
+}
+
+.imagen-tarjeta-harry {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+}
+
+.datosharry {
+    font-size: x-small;
+    padding: 10px;
+}
+
+.datosharry p:first-child {
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+/*Iconos y boton*/
+
+.iconos {
+    height: 10px;
+    display: flex;
+}
+
+.iconos p {
+    font-size: 14px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.iconos img {
+    width: 20px;
+    height: 20px;
+}
+
+.boton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.boton2 {
+    background-color: rgb(174, 18, 18);
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border-color: brown;
+}
+
+.boton2:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/*Ron Weasley*/
+
+.tarjetaron {
+    width: 240px;
+    height: 450px;
+    box-shadow: 5px 5px 8px gray;
+
+}
+
+.imagen-tarjeta-ron {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+}
+
+.datosron {
+    font-size: x-small;
+    padding: 10px;
+}
+
+.datosron p:first-child {
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+/*Hermione Granger*/
+
+.tarjetahermione {
+    width: 240px;
+    height: 450px;
+    box-shadow: 5px 5px 8px gray;
+
+}
+
+.imagen-tarjeta-hermione {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+}
+
+.datoshermione {
+    font-size: x-small;
+    padding: 10px;
+}
+
+.datoshermione p:first-child {
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+/*Harry Quidditch*/
+
+.tarjetaescoba {
+    width: 240px;
+    height: 450px;
+    box-shadow: 5px 5px 8px gray;
+
+}
+
+.imagen-tarjeta-escoba {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+}
+
+.datosescoba {
+    font-size: x-small;
+    padding: 10px;
+}
+
+.datosescoba p:first-child {
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+/*Ariel*/
+
+.tarjetaariel {
+    width: 240px;
+    height: 450px;
+    box-shadow: 5px 5px 8px gray;
+
+}
+
+.imagen-tarjeta-ariel {
+    width: 270px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+}
+
+.datosariel {
+    font-size: x-small;
+    padding: 10px;
+}
+
+.datosariel p:first-child {
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+/*Ariel en su trono*/
+
+.tarjetatrono {
+    width: 240px;
+    height: 450px;
+    box-shadow: 5px 5px 8px gray;
+
+}
+
+.imagen-tarjeta-trono {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+}
+
+.datostrono {
+    font-size: x-small;
+    padding: 10px;
+}
+
+.datostrono p:first-child {
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+/*Bella*/
+
+.tarjetabella {
+    width: 240px;
+    height: 450px;
+    box-shadow: 5px 5px 8px gray;
+
+}
+
+.imagen-tarjeta-bella {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+}
+
+.datosbella {
+    font-size: x-small;
+    padding: 10px;
+}
+
+.datosbella p:first-child {
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+/*Cenicienta*/
+
+.tarjetacenicienta {
+    width: 240px;
+    height: 450px;
+    box-shadow: 5px 5px 8px gray;
+
+}
+
+.imagen-tarjeta-cenicienta {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+}
+
+.datoscenicienta {
+    font-size: x-small;
+    padding: 10px;
+}
+
+.datoscenicienta p:first-child {
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}

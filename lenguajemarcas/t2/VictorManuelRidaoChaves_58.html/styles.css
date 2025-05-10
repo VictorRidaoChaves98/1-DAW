@@ -1,0 +1,120 @@
+#navlist {
+    position: relative;
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+
+}
+
+#navlist li a {
+    height: 70px;
+    display: block;
+}
+
+/*Parte superior de la imagen*/
+
+#barra {
+    width: 91px;
+    height: 71px;
+    background: url(BarraNavegacion.png) 0 0;
+    left: 0;
+}
+
+#home {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -90px 0;
+    left: 90px;
+
+}
+
+#about {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -221px 0;
+    left: 222px;
+}
+
+#shop {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -354px 0;
+    left: 354px;
+}
+
+#blog {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -486px 0;
+    left: 486px;
+}
+
+#contact {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -618px 0;
+    left: 618px;
+}
+
+#lupa {
+    width: 280px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -749px 0;
+    left: 750px;
+}
+
+/*Parte inferior a modo de hover*/
+
+#barra:hover {
+    width: 91px;
+    height: 71px;
+    background: url(BarraNavegacion.png) 0 -70px;
+    left: 0;
+}
+
+#home:hover {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -90px -70px;
+    left: 90px;
+
+}
+
+#about:hover {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -221px -70px;
+    left: 222px;
+}
+
+#shop:hover {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -354px -70px;
+    left: 354px;
+}
+
+#blog:hover {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -486px -70px;
+    left: 486px;
+}
+
+#contact:hover {
+    width: 132px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -618px -70px;
+    left: 618px;
+}
+
+#lupa:hover {
+    width: 280px;
+    height: 71px;
+    background: url(BarraNavegacion.png) -749px -70px;
+    left: 750px;
+}

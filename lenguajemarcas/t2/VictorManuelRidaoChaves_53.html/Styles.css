@@ -1,118 +1,102 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fuente personalizada */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
-    min-height: 100vh;
+    margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
+    align-items: left;
+    background-color: #ffd386;   
 }
 
-/* Navegación */
-nav {
-    background-color: #3498db;
-    padding: 10px;
+header {
+    background-color: #d77d16;
+    font-style: italic;
+    font-size: x-large;
+    padding: 5px;
+}
+
+h1{
+    color: #7700ff;
+    font-style: oblique;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #d7168a;
+    font-style: inherit;
+    font-size: xx-large;
+}
+
+h3 {
+    color: #972db7;
+    font-style: italic;
+    font-size: larger;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li a {
+nav li {
+    margin-right: 40px;
+    
+
+}
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+nav a:hover{
+
+    background-color: rgba(125, 68, 231, 0.784);
     color: white;
+    border-radius: 30px;
+}
+
+nav a {
     text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
+    color: rgb(26, 58, 122);
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: #2980b9;
-    border-radius: 5px;
-}
-
-/* Contenido centrado */
 main {
-    flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
-.contenido {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 800px;
+.contenido{
     width: 100%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background-color: #e3ad6f;
+    margin: 5px;
+    border-radius: 30px;
 }
 
-/* Imagen de receta */
-.imagen-receta {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
-}
 
-/* Títulos */
-h1 {
-    color: #2c3e50;
+.imagen {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 50px;
     margin-bottom: 20px;
+    border: 2px solid #5d00ff;
+    
+
 }
 
-h2 {
-    color: #34495e;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-/* Ingredientes */
-.ingredientes {
-    list-style-type: square;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-/* Hover sobre ingredientes */
-.ingredientes li:hover {
-    color: #e67e22;
-    cursor: pointer;
-}
-
-/* Botón en el index */
-.boton {
-    display: inline-block;
-    background-color: #27ae60;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.boton:hover {
-    background-color: #219150;
-}
-
-/* Footer */
 footer {
-    background-color: #3498db;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
+    background-color: #d77d16;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-align: left;
+    padding: 3px;
 }

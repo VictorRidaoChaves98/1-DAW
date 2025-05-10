@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(234, 209, 145);
+}
+h1 {
+    text-align: center;
+    background-color: rgb(217, 145, 21);
+    font-family: cursive;
+}
+
+h2 {
+    text-align: left;
+    background-color: rgb(232, 115, 115);
+    font-family: cursive;
+}
+
+/*-------------HARRY---------------*/
+
+.tarjetasimple {
+    width: 370px;
+    height: 420px;
+    box-shadow: 5px 5px 8px rgb(223, 95, 95);
+    background-color: white;
+}
+
+.tarjetasimple p {
+    line-height: normal;
+}
+
+.imagen-tarjeta-simple {
+    width: 300px;
+    height: 330px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.datossimple {
+    padding: 10px;
+    text-align: center;
+    color: gray;
+}
+
+/*-------------RON-----------------*/
+
+.tarjetatitulo {
+    width: 370px;
+    height: 450px;
+    box-shadow: 5px 5px 8px rgb(206, 139, 139);
+    background-color: white;
+}
+
+.tarjetatitulo p {
+    line-height: normal;
+}
+
+.imagen-tarjeta-titulo {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.datostitulo {
+    padding: 10px;
+}
+
+.datostitulo p:first-child {
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}
+
+/*------------HARRY QUIDDITCH--------*/
+
+.tarjetaboton {
+    width: 370px;
+    height: 600px;
+    box-shadow: 5px 5px 8px rgb(203, 127, 127);
+    background-color: white;
+}
+
+.tarjetaboton p {
+    line-height: normal;
+}
+
+.imagen-tarjeta-boton {
+    width: 300px;
+    height: 330px;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+}
+
+.datosboton {
+    padding: 10px;
+}
+
+.datosboton p:first-child {
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.boton {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.boton2 {
+    background-color: rgb(174, 20, 20);
+    color: white;
+    text-decoration: none;
+    padding: 2px 20px;
+    border-radius: 50px;
+}
+
+.boton2:hover {
+    background-color: red;
+
+}
+
+.boton2:active {
+    background-color: brown;
+}
+
+
+
+/*-----------HERMIONE---------------*/
+
+.tarjetaicono {
+    width: 370px;
+    height: 535px;
+    box-shadow: 5px 5px 8px rgb(209, 148, 148);
+    background-color: white;
+}
+
+.tarjetaicono p {
+    line-height: normal;
+}
+
+.imagen-tarjeta-icono {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.datosiconos {
+    padding: 10px;
+}
+
+.datosiconos p:first-child {
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.iconos {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.iconos p {
+    font-size: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.iconos img {
+    width: 40px;
+    height: 40px;
+}
