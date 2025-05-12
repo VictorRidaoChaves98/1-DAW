@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Atributos</title>
+    <style>
+        li[data-type="personaje"] {
+            background-color: lightgreen;
+
+        }
+
+        li[data-type="lugar"] {
+            background-color: lightcoral;
+
+        }
+
+        li[data-type="objeto"] {
+            background-color: lightblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li data-type="personaje">Harry Potter</li>
+        <li data-type="lugar">Hogwarts</li>
+        <li data-type="objeto">Varita</li>
+    </ul>
+    <ul>
+        <li data-type="personaje">Frodo Bolsón</li>
+        <li data-type="lugar">La Comarca</li>
+        <li data-type="objeto">El Anillo</li>
+    </ul>
+</body>
+
+</html>
