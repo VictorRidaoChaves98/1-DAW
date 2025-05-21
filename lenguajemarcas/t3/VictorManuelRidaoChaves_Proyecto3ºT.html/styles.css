@@ -1,0 +1,214 @@
+/* ==== ESTILOS GENERALES ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+    /* Escala la imagen para cubrir toda la pantalla */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* No repite la imagen */
+    background-attachment: fixed;
+    /* Fija la imagen al fondo */
+    color: #f5f5f5;
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #00ffff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #a215b1;
+    margin-bottom: 10px;
+}
+
+/* ==== HEADER ==== */
+header {
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 3px solid #444;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.titulo h1 {
+    font-size: 2em;
+}
+
+.slogan {
+    font-style: italic;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+/* ==== NAV ==== */
+nav {
+    margin-top: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #00ffff;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* ==== HERO ==== */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #222;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid #555;
+}
+
+/* ==== SECCIONES GENERALES ==== */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section hr {
+    margin: 40px 0;
+    border-color: #333;
+}
+
+/* ==== CONÓCENOS y TIENDA ==== */
+.conocenos,
+.tienda-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conocenos .imagen img,
+.tienda-info .imagen img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 2px solid #444;
+}
+
+/* ==== ACCESO RÁPIDO ==== */
+.acceso-rapido {
+    text-align: center;
+}
+
+.acceso-rapido .botones {
+    margin-top: 20px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #00ffff;
+    color: #000;
+    padding: 12px 25px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.boton:hover {
+    background-color: #00cccc;
+}
+
+/* ==== NEWSLETTER ==== */
+.newsletter {
+    background-color: #111;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    max-width: 80%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00ffff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #8790e4;
+}
+
+/* ==== FOOTER ==== */
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #999;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #00ffff;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
