@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de la Consola | RETROBOX</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header" id="mainHeader">
+        <div class="container header-content">
+            <h1 class="site-title"><a href="index.html">RETROBOX</a></h1>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="comprar1.html">Comprar Juegos</a></li>
+                    <li><a href="alquilar1.html" class="active">Alquilar Consolas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="notfound.html">Ofertas Secretas</a></li>
+                </ul>
+            </nav>
+            <div class="radio-player">
+                <button id="radio-toggle" class="soft-glitch-button" title="Activar/Desactivar Radio">
+                    <span class="glitch-text" data-text="♪ Radio Off">♪ Radio Off</span>
+                </button>
+                <input type="range" id="radio-volume" min="0" max="1" step="0.1" value="0.5" title="Volumen de la Radio">
+                <audio id="ncs-audio" loop>
+                    <source src="/audio/ncs_radio_track.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <button class="nav-toggle-button" id="navToggleButton" aria-label="Toggle navigation">
+                <span class="house-icon">🏠</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumbs-section container">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="alquilar1.html">Alquilar Consolas</a></li>
+                    <li id="detail-breadcrumb-item">Detalle de la Consola</li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="detail-section container section-spacing scroll-animate" data-animation="fade-in">
+            <h2 class="section-title" id="console-detail-title">Cargando Detalles...</h2>
+            <div class="detail-content" id="console-detail-content">
+                <div class="detail-image-wrapper">
+                    <img src="" alt="Consola en detalle" id="detail-image" class="retro-image detail-large-image">
+                </div>
+                <div class="detail-info">
+                    <p><strong class="label">Modelo:</strong> <span id="detail-model"></span></p>
+                    <p><strong class="label">Estado:</strong> <span id="detail-condition"></span></p>
+                    <p><strong class="label">Incluye:</strong> <span id="detail-includes"></span></p>
+                    <p class="description" id="detail-description"></p>
+                    <p class="price-big"><strong class="label">Precio por día:</strong> <span id="detail-price"></span></p>
+                    <button class="cta-button soft-glitch-effect">Alquilar Ahora</button>
+                    <a href="alquilar1.html" class="back-link soft-glitch-button">← Volver a Consolas</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="back-to-top" class="back-to-top-button soft-glitch-button" title="Volver arriba">↑</button>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>RETROBOX</h4>
+                    <p>Tu portal a la nostalgia pixelada.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación Rápida</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="comprar1.html">Comprar</a></li>
+                        <li><a href="alquilar1.html">Alquilar</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Conéctate</h4>
+                    <ul class="social-links">
+                        <li><a href="notfound.html" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="notfound.html" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="notfound.html" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Info de Contacto</h4>
+                    <p>Email: <a href="mailto:info@retrobox.com">info@retrobox.com</a></p>
+                    <p>Tel: <a href="tel:+34123456789">+34 123 45 67 89</a></p>
+                    <address>C/ Bits & Bytes, 42, 28001 Madrid, España</address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RETROBOX. Todos los derechos reservados. <a href="notfound.html">Política de Privacidad</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
