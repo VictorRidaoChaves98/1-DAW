@@ -3,91 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Blog | Videojuegos Retro</title>
+    <title>Blog | Kendo Retro Shop</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="imagenes/favicom.png" type="image/x-icon">
+    <link rel="icon" href="varios/otros/favicom.png" type="image/x-icon">
 </head>
 
 <body>
-
-    <header>
-        <div class="logo-titulo">
-            <img src="img/logo.png" alt="Logo Videojuegos Retro" class="logo">
-            <div class="titulo">
-                <h1>Videojuegos Retro</h1>
-                <p class="slogan">¡Vuelve a jugar como antes!</p>
+    <div class="contenedor-principal">
+        <header>
+            <div class="logo-titulo">
+                <img src="varios/otros/favicom.png" alt="Logo Kendo Retro Shop" class="logo">
+                <div class="titulo">
+                    <h1>Kendo Retro Shop</h1>
+                    <p class="slogan">Donde cada cartucho guarda una historia</p>
+                </div>
             </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="comprar1.html">Comprar</a></li>
-                <li><a href="alquilar1.html">Alquilar</a></li>
-                <li><a href="sobre.html">Sobre Nosotros</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="menu-desplegable">
+                        <a href="#">Comprar ▼</a>
+                        <ul class="submenu">
+                            <li><a href="comprar-juegos1.html">Videojuegos</a></li>
+                            <li><a href="comprar-consolas1.html">Videoconsolas</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-desplegable">
+                        <a href="#">Alquilar ▼</a>
+                        <ul class="submenu">
+                            <li><a href="alquilar-juegos1.html">Videojuegos</a></li>
+                            <li><a href="alquilar-consolas1.html">Videoconsolas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sobre.html">Sobre Nosotros</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <p class="migas-pan"><a href="index.html">Inicio</a> > Blog</p>
-        <h2>Blog Retro</h2>
+        <main>
+            <section class="migas">
+                <p><a href="index.html">Inicio</a> > Blog</p>
+            </section>
 
-        <section class="entrada-blog">
-            <h3>🎮 Los 5 mejores juegos de SNES que marcaron una generación</h3>
-            <p class="fecha">Publicado el 5 de mayo de 2025</p>
-            <p>La Super Nintendo tuvo joyas inolvidables como Chrono Trigger, Super Metroid y The Legend of Zelda: A
-                Link to the Past. En esta entrada repasamos los títulos más emblemáticos y por qué siguen siendo
-                referentes.</p>
-            <a href="notfound.html" class="leer-mas">Leer más</a>
-        </section>
+            <div class="intro">
+                <h2>Blog Retro</h2>
+                <p>En esta sección encontrarás todas las novedades de Kendo Retro Shop y del mundo de los videojuegos
+                    clásicos.</p>
+            </div>
 
-        <section class="entrada-blog">
-            <h3>🕹️ Cómo conservar tus cartuchos retro en perfecto estado</h3>
-            <p class="fecha">Publicado el 21 de abril de 2025</p>
-            <p>La humedad, el polvo y el tiempo pueden deteriorar tus cartuchos. Aquí te damos consejos prácticos para
-                limpiar y guardar tus juegos clásicos como un profesional.</p>
-            <a href="notfound.html" class="leer-mas">Leer más</a>
-        </section>
 
-        <section class="entrada-blog">
-            <h3>📼 ¿Merece la pena coleccionar consolas antiguas?</h3>
-            <p class="fecha">Publicado el 2 de abril de 2025</p>
-            <p>Analizamos el valor emocional y económico de coleccionar consolas clásicas como la NES, la Dreamcast o la
-                Atari 2600. ¿Moda pasajera o inversión a largo plazo?</p>
-            <a href="notfound.html" class="leer-mas">Leer más</a>
-        </section>
-    </main>
+            <div class="blog-entradas">
 
-    <footer>
-        <div class="footer-info">
-            <p>© 2025 Videojuegos Retro. Todos los derechos reservados.</p>
-            <p>Dirección: Calle Pixel 8, RetroCity</p>
-            <p>Teléfono: 123 456 789</p>
-            <p>Email: contacto@videojuegosretro.com</p>
-        </div>
+                <article class="entrada">
+                    <img src="varios/juegos/nes/cartuchosnes.png" alt="Cartuchos SNES" class="miniatura-blog">
+                    <h3>Llegan nuevos títulos de SNES a la tienda</h3>
+                    <p class="fecha">25 de mayo de 2025</p>
+                    <p>Acabamos de recibir una nueva remesa de cartuchos originales de Super Nintendo. Incluye joyas
+                        como <em>Super Metroid</em>, <em>Donkey Kong Country</em> y más. ¡Ven a por ellos antes de que
+                        se agoten!</p>
+                </article>
 
-        <div class="footer-links">
-            <a href="index.html">Inicio</a> |
-            <a href="comprar1.html">Comprar</a> |
-            <a href="alquilar1.html">Alquilar</a> |
-            <a href="contacto.html">Contacto</a> |
-            <a href="sobrenosotros.html">Sobre Nosotros</a> |
-            <a href="blog.html">Blog</a>
-        </div>
+                <article class="entrada">
+                    <img src="varios/consolas/segasaturn.png" alt="Cartuchos SNES" class="miniatura-blog">
+                    <h3>Curiosidades sobre la SEGA Saturn que quizás no conocías</h3>
+                    <p class="fecha">20 de mayo de 2025</p>
+                    <p>¿Sabías que la Saturn fue más popular en Japón que en Europa? Te contamos detalles técnicos,
+                        fracasos comerciales y juegos que marcaron historia en este olvidado tesoro de SEGA.</p>
+                </article>
 
-        <div class="footer-social">
-            <a href="notfound.html">Instagram</a> |
-            <a href="notfound.html">Twitter</a> |
-            <a href="notfound.html">Facebook</a>
-        </div>
+                <article class="entrada">
+                    <img src="varios/juegos/n64/mariokart64.png" alt="Cartuchos SNES" class="miniatura-blog">
+                    <h3>Torneo Retro de Mario Kart 64 en nuestra tienda física</h3>
+                    <p class="fecha">15 de mayo de 2025</p>
+                    <p>Apúntate ya a nuestro torneo de Mario Kart y demuestra que los reflejos retro todavía están
+                        vivos. Premios para los ganadores y mucho ambiente noventero garantizado.</p>
+                </article>
 
-        <div class="volver-arriba">
-            <a href="#">↑ Volver arriba</a>
-        </div>
-    </footer>
+            </div>
+        </main>
 
+        <footer>
+            <p>© 2025 Kendo Retro Shop. Todos los derechos reservados.</p>
+            <p>
+                <a href="notfound.html">Instagram</a> |
+                <a href="notfound.html">Twitter</a> |
+                <a href="notfound.html">Facebook</a>
+            </p>
+            <p><a href="#">Volver arriba</a></p>
+        </footer>
+    </div>
 </body>
 
 </html>
