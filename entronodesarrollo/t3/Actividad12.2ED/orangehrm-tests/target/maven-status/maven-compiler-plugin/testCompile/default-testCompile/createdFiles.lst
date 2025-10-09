@@ -1,0 +1,11 @@
+tests\Tc06PimReportsTest.class
+tests\Tc07PimSearchEmployeeTest.class
+tests\Tc04AdminOrganizationGeneralInformationTest.class
+tests\Tc08LeaveEntitlementsEmployeeEntitlementsTest.class
+tests\BaseTest.class
+tests\Tc02AdminJobJobTitleTest.class
+tests\Tc09LeaveReportsLeaveEntitlementsAndUsageReportsTest.class
+tests\Tc10LeaveAssignLeaveTest.class
+tests\Tc01LoginTest.class
+tests\Tc03AdminNationalitiesTest.class
+tests\Tc05PimAddEmployeeTest.class

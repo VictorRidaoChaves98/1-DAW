@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Test Suite" parallel="false">
+    <test name="All Test Cases">
+        <classes>
+            <class name="tests.Tc01LoginTest"/>
+            <class name="tests.Tc02AdminJobJobTitleTest"/>
+            <class name="tests.Tc03AdminNationalitiesTest"/>
+            <class name="tests.Tc04AdminOrganizationGeneralInformationTest"/>
+            <class name="tests.Tc05PimAddEmployeeTest"/>
+            <class name="tests.Tc06PimReportsTest"/>
+            <class name="tests.Tc07PimSearchEmployeeTest"/>
+            <class name="tests.Tc08LeaveEntitlementsEmployeeEntitlementsTest"/>
+            <class name="tests.Tc09LeaveReportsLeaveEntitlementsAndUsageReportsTest"/>
+            <class name="tests.Tc10LeaveAssignLeaveTest"/>
+        </classes>
+    </test>
+</suite>
