@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: tests.Tc07PimSearchEmployeeTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.272 s - in tests.Tc07PimSearchEmployeeTest
