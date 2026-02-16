@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "request": "launch",
+            "name": "Depurar Main",
+            "mainClass": "com.miempresa.app.Main",
+            "projectName": "ProyectoDepuracion"
+        }
+    ]
+}
